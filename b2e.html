@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кейс 02 — Отменила Excel за 11 дней · Валерия Понкрашова</title>
+<meta name="description" content="Ручной Excel-расчёт туров → автоматизированная финмодель. −85% времени расчёта. B2E ERP, Турпродукт.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/design-system.css">
+<link rel="stylesheet" href="styles/animations.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div id="rp"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-in">
+    <a href="index.html" class="nav-logo">THE VAL</a>
+    <div class="nav-links" id="nl">
+      <a href="index.html#cases" class="nav-link">Кейсы</a>
+      <a href="index.html#how" class="nav-link" style="display:none">Как работаю</a>
+      <a href="about.html" class="nav-link" style="display:none">Обо мне</a>
+      <a href="#footer" class="nav-link">Контакты</a>
+      <a href="assets-cases/resume.pdf.pdf" class="nav-cta" download>
+        CV
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 2v10M3 8l4 4 4-4"/>
+        </svg>
+      </a>
+    </div>
+    <button class="hbg" id="hbg" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="case-hero">
+  <div class="case-hero-inner">
+    <div class="case-hero-left">
+      <div class="hero-tags">
+        <span class="htag">B2B</span>
+        <span class="htag">SAAS</span>
+        <span class="htag">ERP</span>
+        <span class="htag">Цифровизация</span>
+      </div>
+      <h1 class="hero-h1">
+        Отменила Excel за 11 дней
+      </h1>
+      <div class="hero-tldr">
+        <span class="hero-tldr-text">Работала на стыке бизнес-аналитики и продуктового дизайна. Формализовала финансовую логику, которая до этого жила только в голове одного человека и превратила её в ERP-модуль</span>
+      </div>
+    </div>
+  </div>
+  <div class="case-hero-preview">
+    <div class="case-hero-preview__track">
+      <img src="media/b2e/case-b2e-1.jpg" alt="" style="height:500px;width:auto;border-radius:16px;flex-shrink:0;">
+      <img src="media/b2e/case-b2e-2.jpg" alt="" style="height:500px;width:auto;border-radius:16px;flex-shrink:0;">
+      <img src="media/b2e/case-b2e-3.jpg" alt="" style="height:500px;width:auto;border-radius:16px;flex-shrink:0;">
+      <img src="media/b2e/case-b2e-4.jpg" alt="" style="height:500px;width:auto;border-radius:16px;flex-shrink:0;">
+      <img src="media/b2e/case-b2e-5.jpg" alt="" style="height:500px;width:auto;border-radius:16px;flex-shrink:0;">
+      <img src="media/b2e/case-b2e-6.jpg" alt="" style="height:500px;width:auto;border-radius:16px;flex-shrink:0;">
+    </div>
+  </div>
+  <div class="stats-bar">
+    <div class="stats-bar-inner">
+      <div class="stat-cell"><div class="stat-n">−85<sup>%</sup></div><div class="stat-l">Время расчёта</div></div>
+      <div class="stat-cell"><div class="stat-n">3</div><div class="stat-l">Excel-файлов заменено</div></div>
+      <div class="stat-cell"><div class="stat-n">1</div><div class="stat-l">ERP-модуль</div></div>
+      <div class="stat-cell"><div class="stat-n" style="font-size:20px;line-height:1.3">BPMN</div><div class="stat-l">Полная карта процесса</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PAGE LAYOUT -->
+<div class="page-wrap">
+
+  <!-- SIDE NAV -->
+  <div class="side-time">~4 мин чтения</div>
+  <aside class="side-nav">
+    <ul class="side-nav-list">
+      <li class="side-nav-item"><a href="#context"    data-sec="context">Контекст</a></li>
+      <li class="side-nav-item"><a href="#role"       data-sec="role">Роль</a></li>
+      <li class="side-nav-item"><a href="#research"   data-sec="research">Исследование</a></li>
+      <li class="side-nav-item"><a href="#problem"    data-sec="problem">Проблема</a></li>
+      <li class="side-nav-item" style="display:none"><a href="#screens"    data-sec="screens">Решения</a></li>
+      <li class="side-nav-item"><a href="#results"    data-sec="results">Результат</a></li>
+      <li class="side-nav-item"><a href="#reflection" data-sec="reflection">Рефлексия</a></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+
+    <!-- CONTEXT -->
+    <section class="sec" id="context">
+      <div class="sec-head">
+        <span class="sec-label">01 — Контекст</span>
+        <h2 class="sec-title">Бизнес-задача</h2>
+        <p class="sec-sub">Откуда взялась боль и что бизнес хотел решить</p>
+      </div>
+      <div class="ctx-grid rv">
+        <div class="ctx-card">
+          <span class="ctx-card-label">Запрос бизнеса</span>
+          <h3 class="ctx-card-title">Убрать ручной расчёт туров из Excel</h3>
+          <p>Задача пришла в рамках разработки ERP-модуля турпродукта. На входе — встреча с руководителем и 3 Excel-файла, в которых велись все расчёты компании. Логика нигде не задокументирована. Сорок переменных. Один носитель знания</p>
+          <div class="constraints">
+            <div class="cst"><span class="cst-badge b-tech">Tech</span><span>Финансовая модель</span></div>
+            <div class="cst"><span class="cst-badge b-biz">Бизнес</span><span>Ценообразование</span></div>
+            <div class="cst"><span class="cst-badge b-ux">Дизайн</span><span>Сложная доменная форма</span></div>
+          </div>
+        </div>
+        <div class="ctx-card dark">
+          <span class="ctx-card-label">Цель продукта</span>
+          <h3 class="ctx-card-title">Автоматизировать расчёт — сохранить гибкость</h3>
+          <p>Страница «Стоимость» — ключевой узел в процессе формирования тура. Система должна сама собирать данные по всем услугам, распределять затраты на разные размеры групп, считать себестоимость каждого тарифа, предлагать цену с учётом маржи и показывать точку рентабельности</p>
+          <div class="metrics-cloud">
+            <span class="mc">Время расчёта</span><span class="mc">Ошибки из-за человеческого фактора</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROLE -->
+    <section class="sec" id="role">
+      <div class="sec-head">
+        <span class="sec-label">02 — Роль</span>
+        <h2 class="sec-title">Мой вклад</h2>
+        <p class="sec-sub">Аналитика на проекте не было. Я взяла на себя и исследование, и проектирование</p>
+
+      </div>
+      <div class="role-layout rv">
+        <div class="role-card">
+          <div class="role-chips">
+            <span class="chip chip-dark">Product Designer</span>
+            <span class="chip chip-dark">UX Research</span>
+            <span class="chip chip-dark">Business Analysis</span>
+          </div>
+          <ul class="role-list">
+            <li>Глубинное интервью с единственным носителем бизнес-логики</li>
+            <li>Провела аудит 3 Excel-файлов — вычленила 40+ переменных и логические зависимости</li>
+            <li>Презентация результата стейкхолдеру, заказчику и фаундеру</li>
+            <li>Соблюла консистентность баз данных SQL</li>
+            <li>Передала всю логику расчета для описания и передачи ее в разработку</li>
+          </ul>
+        </div>
+        <div class="team-card">
+          <div class="team-lbl">Команда</div>
+          <div class="tm"><div class="av me">ВП</div><span class="tm-name">Валерия</span><span class="tm-role">Product Designer</span></div>
+          <div class="tm"><div class="av">PO</div><span class="tm-name">Product Owner</span><span class="tm-role">Стейкхолдер</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="sec" id="research">
+      <div class="sec-head">
+        <span class="sec-label">03 — Исследование</span>
+        <h2 class="sec-title">Погружение в процесс</h2>
+        <p class="sec-sub">Прежде чем проектировать — понять, как думают люди, которые этим занимаются каждый день</p>
+      </div>
+      <div class="research-flow rv">
+        <div class="rf-item">
+          <div class="rf-icon">📁</div>
+          <div class="rf-title">Аудит Excel</div>
+          <div class="rf-result">3 файла</div>
+          <div class="rf-text">Результат: 40+ переменных, скрытые зависимости</div>
+        </div>
+        <div class="rf-item">
+          <div class="rf-icon">🎙</div>
+          <div class="rf-title">Глубинное интервью</div>
+          <div class="rf-result">Изучение пути расчета</div>
+          <div class="rf-text">Результат: полная картина правил, исключения, пограничные случаи, труктура логики</div>
+        </div>
+        <div class="rf-item">
+          <div class="rf-icon">⚠</div>
+          <div class="rf-title">Боли</div>
+          <div class="rf-result">Где система ломается</div>
+          <div class="rf-text">Результат: уменьшение затрат на издержки, времени на расчет, избегание ошибок при интуитивном проставлении стоимости и зависимости от одного человека</div>
+        </div>
+        <div class="rf-item">
+          <div class="rf-icon">🗺</div>
+          <div class="rf-title">To-Be процесс</div>
+          <div class="rf-result">Целевая модель</div>
+          <div class="rf-text">Результат: автоматический расчёт с дополнительными фичами маржи и точкой рентабельности</div>
+        </div>
+        <div class="rf-item">
+          <div class="rf-icon">🗂</div>
+          <div class="rf-title">BPMN As-Is</div>
+          <div class="rf-result">Передача наработок</div>
+          <div class="rf-text">Несколько созвонов с PM для совместного описания логики для разработчиков</div>
+        </div>
+
+      </div>
+      <div class="insight-strip rv">
+        <span class="is-label">Инсайт</span>
+        <span class="is-text">Настоящая задача почти никогда не совпадает с тем, что звучит на старте. Задачу сформулировали просто: перевести расчёты в цифровой формат. Без уточнений, без деталей. Но стоило разобраться в том, как эти расчёты устроены, и выяснилось: вся финансовая логика компании существовала в голове одного человека. Ценообразование строилось на интуиции, издержки считались неточно, маржа от тура к туру была разной. Я начала не с дизайна, а бизнес-аналитики: вычленила 40+ переменных, выстроила логические зависимости и превратила это в систему найдя решение в золотоносных фичах. Автоматизировать хаос — значит решать не ту проблему.</span> -->
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="sec" id="problem">
+      <div class="sec-head">
+        <span class="sec-label">04 — Проблема</span>
+        <h2 class="sec-title">Что решали</h2>
+      </div>
+      <div class="hmw rv">
+        <span class="hmw-lbl">How Might We</span>
+        <p class="hmw-q">LКак автоматизировать многофакторный расчёт стоимости тура так, чтобы менеджер получал результат за секунды <em>— и понимал, почему именно столько?</em></p>
+      </div>
+      <div class="problem-cols rv">
+        <div class="pc">
+          <div class="pc-lv">Проблема 1 уровня</div>
+          <div class="pc-title">Потеря времени и ошибки</div>
+          <div class="pc-text">Расчёт одного тура — от 40 минут в Excel с ручным переносом данных между файлами. Любое изменение требовало полного пересчёта вручную</div>
+        </div>
+        <div class="pc">
+          <div class="pc-lv">Проблема 2 уровня</div>
+          <div class="pc-title">Знание внутри людей, не системы</div>
+          <div class="pc-text">Вся логика расчётов существовала только в голове руководителя турпродукта. Уход человека = потеря критической бизнес-экспертизы</div>
+        </div>
+        <div class="pc">
+          <div class="pc-lv">Проблема 3 уровня</div>
+          <div class="pc-title">Не интегрировано с CRM</div>
+          <div class="pc-text">Данные из Excel не связаны с остальными модулями ERP</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+
+    <!-- SCREENS -->
+    <section class="sec" id="screens" style="display:none">
+      <div class="sec-head">
+        <span class="sec-label">06 — Дизайн-решения</span>
+        <h2 class="sec-title">Ключевые экраны</h2>
+        <p class="sec-sub">Главные решения финансового модуля с обоснованием</p>
+      </div>
+      <div class="screens-grid rv">
+        <div class="screen-slot dark">
+          <div class="screen-top">
+            <div class="screen-dots"><div class="sdot sd1"></div><div class="sdot sd2"></div><div class="sdot sd3"></div></div>
+            <div class="screen-label-bar">Финансовый калькулятор</div>
+          </div>
+          <div class="screen-body screen-body-tall">
+            <div class="screen-ph">Главный экран<br>финмодели ERP<br>(Figma → PNG/WebP)</div>
+          </div>
+          <div class="screen-caption">🧮 Единый экран расчёта: все параметры тура видны одновременно — стоимость пересчитывается автоматически</div>
+        </div>
+        <div class="screen-slot">
+          <div class="screen-top">
+            <div class="screen-dots"><div class="sdot sd1"></div><div class="sdot sd2"></div><div class="sdot sd3"></div></div>
+            <div class="screen-label-bar">BPMN As-Is vs To-Be</div>
+          </div>
+          <div class="screen-body screen-body-tall">
+            <div class="screen-ph">Сравнение процессов:<br>17 шагов → 5 шагов<br>(BPMN схема)</div>
+          </div>
+          <div class="screen-caption">⬇ 17 шагов → 5 шагов: убрали ручные переносы и дублирование данных</div>
+        </div>
+      </div>
+      <div class="screens-row rv">
+        <div class="screen-slot">
+          <div class="screen-top">
+            <div class="screen-dots"><div class="sdot sd1"></div><div class="sdot sd2"></div><div class="sdot sd3"></div></div>
+            <div class="screen-label-bar">Список расчётов</div>
+          </div>
+          <div class="screen-body">
+            <div class="screen-ph">Дашборд менеджера:<br>все активные расчёты<br>и статусы</div>
+          </div>
+          <div class="screen-caption">📋 История расчётов с фильтрами — менеджер находит нужное за 1 клик</div>
+        </div>
+        <div class="screen-slot">
+          <div class="screen-top">
+            <div class="screen-dots"><div class="sdot sd1"></div><div class="sdot sd2"></div><div class="sdot sd3"></div></div>
+            <div class="screen-label-bar">Интеграция с CRM</div>
+          </div>
+          <div class="screen-body">
+            <div class="screen-ph">Передача расчёта<br>в сделку CRM:<br>один клик</div>
+          </div>
+          <div class="screen-caption">🔗 Расчёт прикрепляется к сделке в CRM автоматически — никаких копирований</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="sec" id="results">
+      <div class="sec-head">
+        <span class="sec-label">05 — Результат</span>
+        <h2 class="sec-title">Измеримый результат</h2>
+      </div>
+      <div class="results-nums rv">
+        <div class="rn">
+          <div class="rn-head">
+            <div class="rn-num">−85<small>%</small></div>
+            <div class="rn-label">Время расчёта<br>одного тура</div>
+          </div>
+          <div class="rn-ctx">от 40 мин. → 6 мин</div>
+        </div>
+        <div class="rn">
+          <div class="rn-head">
+            <div class="rn-num">−100<small>%</small></div>
+            <div class="rn-label">Ошибки из-за<br>ручного переноса</div>
+          </div>
+          <div class="rn-ctx">Данные синхронизированы</div>
+        </div>
+        <div class="rn" style="background:var(--accent)">
+          <div class="rn-head">
+            <div class="rn-num" style="font-size:26px;line-height:1.2;margin-bottom:10px">ERP</div>
+            <div class="rn-label" style="color:rgba(255,255,255,.6)">Финансовый модуль в продакшне</div>
+          </div>
+          <div class="rn-ctx" style="color:rgba(255,255,255,.4)">Заменил 3 Excel-файла</div>
+        </div>
+      </div>
+      <div class="results-impact rv">
+        <div class="ri-card">
+          <div class="ri-title">Влияние на бизнес</div>
+          <ul class="ri-list">
+            <li>Логика ценообразования впервые формализована и зафиксирована в системе</li>
+            <li>Устранена критическая зависимость от одного носителя знания</li>
+            <li>Данные синхронизированы с ERP — аналитика работает на чистых источниках</li>
+            <li>Расчёт тура — от 40 мин до 6 минут</li>
+          </ul>
+        </div>
+        <div class="ri-qual">
+          <div class="rq"><div class="rq-l">Статус</div><div class="rq-v">Запущено в продакшн</div></div>
+          <div class="rq"><div class="rq-l">Инструменты</div><div class="rq-v">Figma, FigJam, Miro</div></div>
+          <div class="rq"><div class="rq-l">Сложность</div><div class="rq-v">Финансовая доменная логика с нуля</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFLECTION -->
+    <section class="sec" id="reflection">
+      <div class="sec-head">
+        <span class="sec-label">06 — Рефлексия</span>
+        <h2 class="sec-title">Что узнала</h2>
+      </div>
+      <div class="refl-grid rv">
+        <div class="refl-card">
+          <span class="refl-icon">💡</span>
+          <div class="refl-title">Главный инсайт</div>
+          <div class="refl-text">При согласовании макетов финансовых модулей Lorem Ipsum не работает. Когда в полях стоят реальные цифры — актуальные данные, живые расчёты — стейкхолдеры погружаются в логику мгновенно, а не тратят время на то, чтобы мысленно подставить своё. Это снимает половину вопросов ещё до того, как они возникли. </div>
+        </div>
+        <div class="refl-card">
+          <span class="refl-icon">🔄</span>
+          <div class="refl-title">Что сделала бы иначе</div>
+          <div class="refl-text">Раньше бы начала изучение BPMN нотацию, с ней было бы проще сачала согласовать логику расчета, а затем уже пристуапать к интерфейсу</div>
+        </div>
+      </div>
+      <div class="nda-disclaimer" style="margin-top:40px;justify-content:flex-start">
+        <span class="nda-icon"><i class="fa fa-info-circle"></i></span>
+        <p><strong>NDA disclaimer:</strong> Изображения на этой странице — черновики, концепции или высокоточные макеты, не отражающие финальный продукт.<br>Все имена, числа, заголовки и данные вымышлены. Логика, методология и результаты — реальные.</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+
+<!-- CTA -->
+<div class="case-cta dot-pattern">
+  <div class="cta-wrap">
+    <a href="agent-lk.html" class="next-card">
+      <div class="nc-tags"><span class="nc-tag">B2B2C</span><span class="nc-tag">CRM</span></div>
+      <div class="nc-title">ЛК агента: −45,3% времени на заявку и восхищенные отзывы</div>
+      <div class="nc-arr">→</div>
+    </a>
+    <a href="mobile.html" class="next-card">
+      <div class="nc-tags"><span class="nc-tag">B2C</span><span class="nc-tag">FinTech</span></div>
+      <div class="nc-title">Альфа-банк. Подошла как продакт — доказала, что банкомат лишний</div>
+      <div class="nc-arr">→</div>
+    </a>
+  </div>
+</div>
+
+<!-- CONTACTS -->
+<section class="contacts" id="contacts">
+  <div class="contacts-inner">
+    <div class="contacts-left">
+      <div class="c-label">Открыта к офферам</div>
+      <h2 class="c-title">Обсудим задачу?</h2>
+      <p class="c-sub">Готова к полной занятости и проектному сотрудничеству.</p>
+      <a href="https://t.me/ValeriyaWithLove" target="_blank" class="c-btn">Написать в Telegram</a>
+    </div>
+    <div class="contacts-right">
+      <a href="https://t.me/ValeriyaWithLove" target="_blank" class="c-link">
+        <span class="c-link-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg></span>
+        <span class="c-link-name">Telegram</span>
+        <span class="c-link-val"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a href="https://linkedin.com/in/valeriiapon" target="_blank" class="c-link">
+        <span class="c-link-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span>
+        <span class="c-link-name">LinkedIn</span>
+        <span class="c-link-val"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a href="https://dribbble.com/lerchikper13" target="_blank" class="c-link">
+        <span class="c-link-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 6.628 5.374 12 12 12 6.627 0 12-5.372 12-12 0-6.627-5.373-12-12-12zm7.949 5.672c1.418 1.738 2.272 3.963 2.297 6.381-.336-.072-3.706-.752-7.098-.325-.077-.188-.149-.383-.227-.578-.216-.545-.455-1.093-.693-1.621 3.766-1.536 5.482-3.743 5.721-3.857zm-1.378-1.467c-.213.289-1.762 2.37-5.398 3.734-1.688-3.1-3.558-5.641-3.854-6.051A10.065 10.065 0 0 1 12 2.051c2.456 0 4.71.879 6.571 2.154zM5.915 2.667c.285.389 2.131 2.943 3.843 5.998-4.84 1.285-9.115 1.261-9.583 1.254A10.058 10.058 0 0 1 5.915 2.667zM2.02 12.01v-.264c.456.009 5.528.073 10.699-1.485.3.588.584 1.18.843 1.776-.135.038-.271.077-.403.119-5.363 1.727-8.209 6.438-8.452 6.844A9.959 9.959 0 0 1 2.02 12.01zm10.002 9.97a9.97 9.97 0 0 1-6.017-2.013c.2-.393 2.483-4.804 8.4-6.88l.072-.023a35.766 35.766 0 0 1 1.848 6.571 9.96 9.96 0 0 1-4.303 2.345zm6.121-1.548a37.67 37.67 0 0 0-1.706-6.144c2.767-.443 5.193.284 5.509.379a10.027 10.027 0 0 1-3.803 5.765z"/></svg></span>
+        <span class="c-link-name">Dribbble</span>
+        <span class="c-link-val"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a href="https://behance.net/ponkrasova840e" target="_blank" class="c-link">
+        <span class="c-link-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.938 4.503c.702 0 1.34.06 1.92.188.577.13 1.07.33 1.485.61.41.28.733.65.96 1.12.225.47.34 1.05.34 1.73 0 .74-.17 1.36-.507 1.86-.338.5-.837.9-1.502 1.22.906.26 1.576.72 2.022 1.37.448.64.665 1.41.665 2.32 0 .74-.14 1.38-.42 1.92-.28.54-.67.98-1.16 1.32-.49.34-1.05.59-1.68.75-.63.16-1.29.24-1.98.24H0V4.503h6.938zm-.56 5.26c.585 0 1.07-.14 1.45-.42.38-.28.57-.72.57-1.32 0-.33-.06-.61-.18-.83-.12-.22-.28-.4-.49-.53-.21-.13-.45-.22-.72-.27-.27-.05-.56-.08-.87-.08H3.24v3.45h3.14zm.16 5.52c.34 0 .66-.03.96-.1.3-.07.56-.18.78-.33.22-.16.4-.36.53-.62.13-.26.19-.58.19-.96 0-.76-.22-1.31-.67-1.64-.45-.33-1.05-.49-1.8-.49H3.24v4.14h3.3zm8.96.5l1.3-3.63 1.31 3.63h-2.61zm1.31-9.82l-4.48 12.38h2.7l.89-2.55h3.72l.91 2.55h2.76l-4.5-12.38h-2zm5.72-1.49V3.36h-5.78v1.11h5.78z"/></svg></span>
+        <span class="c-link-name">Behance</span>
+        <span class="c-link-val"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+  <div class="footer-inner">
+    <span class="foot-logo">THE VAL</span>
+    <span class="foot-copy">© 2026 · Понкрашова Валерия · Санкт-Петербург</span>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/preview-scroll.js"></script>
+</body>
+</html>

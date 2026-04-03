@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кейс 04 — Альфа-банк. Подошла как продакт — доказала, что банкомат лишний · Валерия Понкрашова</title>
+<meta name="description" content="Discovery за 5 дней без брифа. 12 CustDev-интервью, 4 барьера, геймификация заявки. B2C FinTech хакатон, Альфа-банк.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/design-system.css">
+<link rel="stylesheet" href="styles/animations.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="rp"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-in">
+    <a href="index.html" class="nav-logo">THE VAL</a>
+    <div class="nav-links" id="nl">
+      <a href="index.html#cases" class="nav-link">Кейсы</a>
+      <a href="index.html#how" class="nav-link" style="display:none">Как работаю</a>
+      <a href="about.html" class="nav-link" style="display:none">Обо мне</a>
+      <a href="#footer" class="nav-link">Контакты</a>
+      <a href="assets-cases/resume.pdf.pdf" class="nav-cta" download>
+        CV
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 2v10M3 8l4 4 4-4"/>
+        </svg>
+      </a>
+    </div>
+    <button class="hbg" id="hbg" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="case-hero">
+  <div class="case-hero-inner">
+    <div class="case-hero-left">
+      <div class="hero-tags">
+        <span class="htag">B2C</span>
+        <span class="htag">FinTech</span>
+        <span class="htag">Discovery</span>
+        <span class="htag">Mobile</span>
+      </div>
+      <h1 class="hero-h1">
+        Альфа-банк. Подошла как продакт — доказала, что банкомат лишний
+      </h1>
+      <div class="hero-tldr">
+<span class="hero-tldr-text">За 5 дней — solo полный цикл: анализ банка, 8 конкурентов, статистика ЦБ, зарубежный опыт, интервью, <br>персона, 2 опроса, backlog. Гипотеза подтвердилась: приложение перекрывает все функции банкомата.<br>Итог — 6 дизайн-решений с финансовой игрой в центре.</span>      </div>
+    </div>
+  </div>
+  <div class="case-hero-preview">
+    <div class="case-hero-preview__track">
+      <div class="case-hero-preview__placeholder"><img src="media/mobile/case-mobile-1.jpg" alt="" style="width:100%;height:500px;object-fit:cover;border-radius:16px;display:block;"></div>
+      <div class="case-hero-preview__placeholder"><img src="media/mobile/case-mobile-2.jpg" alt="" style="width:100%;height:500px;object-fit:cover;border-radius:16px;display:block;"></div>
+      <div class="case-hero-preview__placeholder"><img src="media/mobile/case-mobile-3.jpg" alt="" style="width:100%;height:500px;object-fit:cover;border-radius:16px;display:block;"></div>
+      <div class="case-hero-preview__placeholder"><img src="media/mobile/case-mobile-4.jpg" alt="" style="width:100%;height:500px;object-fit:cover;border-radius:16px;display:block;"></div>
+      <div class="case-hero-preview__placeholder"><img src="media/mobile/case-mobile-5.jpg" alt="" style="width:100%;height:500px;object-fit:cover;border-radius:16px;display:block;"></div>
+      <div class="case-hero-preview__placeholder"><img src="media/mobile/case-mobile-6.jpg" alt="" style="width:100%;height:500px;object-fit:cover;border-radius:16px;display:block;"></div>
+      <div class="case-hero-preview__placeholder"><img src="media/mobile/case-mobile-7.jpg" alt="" style="width:100%;height:500px;object-fit:cover;border-radius:16px;display:block;"></div>
+      <div class="case-hero-preview__placeholder"><img src="media/mobile/case-mobile-8.jpg" alt="" style="width:100%;height:500px;object-fit:cover;border-radius:16px;display:block;"></div>
+      <div class="case-hero-preview__placeholder"><img src="media/mobile/case-mobile-9.jpg" alt="" style="width:100%;height:500px;object-fit:cover;border-radius:16px;display:block;"></div>
+      <div class="case-hero-preview__placeholder"><img src="media/mobile/case-mobile-10.jpg" alt="" style="width:100%;height:500px;object-fit:cover;border-radius:16px;display:block;"></div>
+      <div class="case-hero-preview__placeholder"><img src="media/mobile/case-mobile-11.jpg" alt="" style="width:100%;height:500px;object-fit:cover;border-radius:16px;display:block;"></div>
+    </div>
+  </div>
+  <div class="stats-bar">
+    <div class="stats-bar-inner">
+      <div class="stat-cell"><div class="stat-n">5</div><div class="stat-l">Дней соло-Discovery</div></div>
+      <div class="stat-cell"><div class="stat-n">8</div><div class="stat-l">Конкурентов изучено</div></div>
+      <div class="stat-cell"><div class="stat-n">6</div><div class="stat-l">Дизайн-решений</div></div>
+      <div class="stat-cell"><div class="stat-n">2</div><div class="stat-l">Опроса проведено</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PAGE LAYOUT -->
+<div class="page-wrap">
+
+  <!-- SIDE NAV -->
+  <div class="side-time">~5 мин чтения</div>
+  <aside class="side-nav">
+    <ul class="side-nav-list">
+      <li class="side-nav-item"><a href="#context"    data-sec="context">Контекст</a></li>
+      <li class="side-nav-item"><a href="#role"       data-sec="role">Роль</a></li>
+      <li class="side-nav-item"><a href="#research"   data-sec="research">Исследование</a></li>
+      <li class="side-nav-item"><a href="#problem"    data-sec="problem">Проблема</a></li>
+      <li class="side-nav-item"><a href="#process"    data-sec="process">Процесс</a></li>
+      <li class="side-nav-item" style="display:none"><a href="#screens"    data-sec="screens">Решения</a></li>
+      <li class="side-nav-item"><a href="#results"    data-sec="results">Результат</a></li>
+      <li class="side-nav-item"><a href="#reflection" data-sec="reflection">Рефлексия</a></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+
+    <!-- CONTEXT -->
+    <section class="sec" id="context">
+      <div class="sec-head">
+        <span class="sec-label">01 — Контекст</span>
+        <h2 class="sec-title">Задача хакатона</h2>
+        <p class="sec-sub">5 дней, полная неопределённость, без посторонней помощи</p>
+      </div>
+      <div class="ctx-grid rv">
+        <div class="ctx-card">
+          <span class="ctx-card-label">Запрос</span>
+          <h3 class="ctx-card-title">Изменить процесс получения денежных средств</h3>
+          <p>Пользователям сложно получать наличные. Функция заказа через приложение уже есть, но проблему удобства не закрывает. Бриф требовал самостоятельно понять контекст, провести исследование и предложить реалистичное решение — без уточняющих вопросов к организаторам.</p>
+          <div class="constraints">
+            <div class="cst"><span class="cst-badge b-tech">01</span><span>UI — в рамках визуального языка Альфа-банка (идентичность)</span></div>
+          </div>
+        </div>
+        <div class="ctx-card dark">
+          <span class="ctx-card-label">Гипотеза</span>
+          <h3 class="ctx-card-title">Мобильное приложение способно перекрыть все функции банкомата</h3>
+          <p>Если это так — банк может упразднить банкоматы, снизить издержки и одновременно ускорить цифровизацию экономики. При этом надвигающийся цифровой рубль (массовое внедрение в 2025) угрожает доходам банка: только вклады и накопительные счета останутся конкурентным преимуществом.</p>
+          <div class="metrics-cloud">
+            <span class="mc">Retention</span><span class="mc">GMV</span>
+            <span class="mc">Издержки на банкоматы</span><span class="mc">Лояльность</span>
+            <span class="mc">Цифровой рубль</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROLE -->
+    <section class="sec" id="role">
+      <div class="sec-head">
+        <span class="sec-label">02 — Роль</span>
+        <h2 class="sec-title">Мой вклад</h2>
+      </div>
+      <div class="role-layout rv">
+        <div class="role-card">
+          <div class="role-chips">
+            <span class="chip chip-dark">Product Designer</span>
+            <span class="chip chip-dark">Solo Research</span>
+          </div>
+          <ul class="role-list">
+            <li>Полный цикл от нуля за 5 дней — самостоятельно, без посторонней помощи</li>
+            <li>Масштабное исследование: анализ банка, конкурентов, ЦБ, зарубежный опыт, поведение россиян в кризис</li>
+            <li>Провела интервью, составила персону «Ирина» и Job Stories</li>
+            <li>Два опроса, Backlog с приоритизацией, Mind Map, IA & User Flow</li>
+            <li>Разработала 6 дизайн-решений, создала скетчи и макеты</li>
+            <li>Оформила все наработки в презентацию, соблюла все 4 дедлайна</li>
+          </ul>
+        </div>
+        <div class="team-card">
+          <div class="team-lbl">Команда</div>
+          <div class="tm"><div class="av me">ВП</div><span class="tm-name">Валерия</span><span class="tm-role">Designer + Research</span></div>
+          <div class="tm"><div class="av">АБ</div><span class="tm-name">Альфа-банк</span><span class="tm-role">Заказчик хакатона</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="sec" id="research">
+      <div class="sec-head">
+        <span class="sec-label">03 — Исследование</span>
+        <h2 class="sec-title">Масштабное исследование за 5 дней</h2>
+        <p class="sec-sub">Data-driven подход: понять бизнес, рынок, пользователя — и только потом проектировать</p>
+      </div>
+      <div class="research-flow rv">
+        <div class="rf-item">
+          <div class="rf-icon">🏦</div>
+          <div class="rf-title">Анализ банка</div>
+          <div class="rf-result">Вектор: стратегическое решение</div>
+          <div class="rf-text">Стратегия Альфа-банка, аудитория (физлица, ИП, юрлица), позиция на рынке, лучший UX среди конкурентов по Markswebb</div>
+        </div>
+        <div class="rf-item">
+          <div class="rf-icon">🔎</div>
+          <div class="rf-title">8 конкурентов</div>
+          <div class="rf-result">Незанятая ниша</div>
+          <div class="rf-text">Тинькофф, Ozon Банк и др. Инсайт: у Тинькофф меньше банкоматов, но больше активных клиентов. Никто не предлагал полный отказ от банкоматов.</div>
+        </div>
+        <div class="rf-item">
+          <div class="rf-icon">📊</div>
+          <div class="rf-title">Статистика ЦБ 2019</div>
+          <div class="rf-result">Тренд на безнал подтверждён</div>
+          <div class="rf-text">2/3 населения перешли на безналичные расчёты. 29% выбирают наличные «по привычке». Средняя сумма снятия в банкомате — 4 213 ₽ в 2019 году</div>
+        </div>
+        <div class="rf-item">
+          <div class="rf-icon">🌍</div>
+          <div class="rf-title">Зарубежный опыт</div>
+          <div class="rf-result">Госуровень или выгода</div>
+          <div class="rf-text">Швеция, Франция, Китай, Турция. Вывод: переход на безналичные происходит при инициативе государства — или через стимулы для граждан</div>
+        </div>
+        <div class="rf-item">
+          <div class="rf-icon">🎙</div>
+          <div class="rf-title">Интервью + персона</div>
+          <div class="rf-result">Выгода как триггер</div>
+          <div class="rf-text">Персона «Ирина» (56 лет, Таганрог): снимает наличные из-за привычки и доступности банкоматов. Мотивация — контроль финансов и выгода от продуктов банка</div>
+        </div>
+        <div class="rf-item">
+          <div class="rf-icon">📋</div>
+          <div class="rf-title">Job Stories + 2 опроса</div>
+          <div class="rf-result">Данные вместо допущений</div>
+          <div class="rf-text">Job Stories раскрыли сценарии использования финансовых продуктов. Первый опрос — потребности по функционалу; второй — визуальное решение для повышения конверсии в блоке</div>
+        </div>
+      </div>
+      <div class="insight-strip rv">
+        <span class="is-label">Ключевой вывод исследования</span>
+        <span class="is-text">Мобильное приложение способно перекрыть все функции банкомата — кроме выдачи наличных. <em style="color:rgba(255,255,255,.4);font-style:normal">А значит, путь к отказу от банкоматов лежит через снижение потребности в наличных, а не через технические ограничения.</em></span>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="sec" id="problem">
+      <div class="sec-head">
+        <span class="sec-label">04 — Барьеры</span>
+        <h2 class="sec-title">Почему люди снимают наличные</h2>
+      </div>
+      <div class="hmw rv">
+        <span class="hmw-lbl">How Might We</span>
+        <p class="hmw-q">Как мотивировать пользователя держать средства в приложении банка — и снизить потребность в наличных, <em>не заставляя, а давая выгоду?</em></p>
+      </div>
+      <div class="problem-cols rv">
+        <div class="pc">
+          <div class="pc-lv">Причина 1 — Страх</div>
+          <div class="pc-title">Боятся потерять деньги в кризис</div>
+          <div class="pc-text">Традиция с 90-х: при экономической нестабильности россияне снимают наличные, т.к. вклады ассоциируются с потерей. Хотя с 2004 года вклады до 1,4 млн ₽ застрахованы государством.</div>
+        </div>
+        <div class="pc">
+          <div class="pc-lv">Причина 2 — Привычка</div>
+          <div class="pc-title">Доступность банкоматов усиливает зависимость</div>
+          <div class="pc-text">Исследование: чем больше банкоматов — тем больше наличных на руках. Персона снимает по 1 000 ₽ за раз «просто потому что банкомат рядом» — даже когда можно оплатить картой.</div>
+        </div>
+        <div class="pc">
+          <div class="pc-lv">Причина 3 — Мелкие магазины</div>
+          <div class="pc-title">Наличные нужны там, где нет эквайринга</div>
+          <div class="pc-text">Пользователи не снимают наличные «на всё» — только для мелких покупок там, где карты не принимают. Это устранимый барьер: чаевые, рынки, небольшие магазины.</div>
+        </div>
+        <div class="pc">
+          <div class="pc-lv">Угроза — Цифровой рубль</div>
+          <div class="pc-title">Новый конкурент для доходов банка</div>
+          <div class="pc-text">Массовое внедрение с 2025 года. Цифровой рубль хранится на платформе ЦБ — вклады и накопительные счета в нём невозможны. Это угрожает доходам банков, которые не удержат клиентов продуктами.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="sec" id="process">
+      <div class="sec-head">
+        <span class="sec-label">05 — Процесс</span>
+        <h2 class="sec-title">5 дней от нуля до концепции</h2>
+        <p class="sec-sub">Полная неопределённость — полный цикл. Все 4 дедлайна соблюдены</p>
+      </div>
+      <div class="process-stages rv">
+        <div class="ps">
+          <div class="ps-num done">1</div>
+          <div class="ps-stage-label">Погружение и анализ</div>
+          <div class="ps-title">Понять бизнес и рынок</div>
+          <div class="ps-tags"><span class="ps-tag">Анализ</span><span class="ps-tag">Конкуренты</span></div>
+          <div class="ps-items">
+            <div class="ps-item">Анализ стратегии и аудитории Альфа-банка</div>
+            <div class="ps-item">Зачем нужен банкомат: таблица функций vs приложение</div>
+            <div class="ps-item">8 конкурентов, плюсы/минусы банкомата</div>
+            <div class="ps-item">Статистика ЦБ 2019, зарубежный опыт, цифровой рубль</div>
+          </div>
+        </div>
+        <div class="ps">
+          <div class="ps-num done">2</div>
+          <div class="ps-stage-label">Пользователь и синтез</div>
+          <div class="ps-title">Понять пользователя и приоритизировать</div>
+          <div class="ps-tags"><span class="ps-tag">Интервью</span><span class="ps-tag">Job Stories</span></div>
+          <div class="ps-items">
+            <div class="ps-item">Интервью, персона «Ирина», Job Stories</div>
+            <div class="ps-item">2 опроса: функционал + визуальное решение</div>
+            <div class="ps-item">Mind map, выводы по основному анализу</div>
+            <div class="ps-item">Backlog + приоритизация, IA & User Flow</div>
+          </div>
+        </div>
+        <div class="ps">
+          <div class="ps-num done">3</div>
+          <div class="ps-stage-label">Проектирование</div>
+          <div class="ps-title">Решения и финальная презентация</div>
+          <div class="ps-tags"><span class="ps-tag">UI</span><span class="ps-tag">Скетчи</span></div>
+          <div class="ps-items">
+            <div class="ps-item">Скетчи → макеты 6 дизайн-решений</div>
+            <div class="ps-item">UI в рамках Альфа-идентичности</div>
+            <div class="ps-item">Оформление всех наработок в презентацию</div>
+            <div class="ps-item">Защита концепции, все дедлайны соблюдены</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREENS -->
+    <section class="sec" id="screens" style="display:none">
+      <div class="sec-head">
+        <span class="sec-label">06 — Дизайн-решения</span>
+        <h2 class="sec-title">6 дизайн-решений</h2>
+        <p class="sec-sub">Комплексное решение — не одна фича. Центр — финансовая игра</p>
+      </div>
+      <div class="screens-grid rv">
+        <div class="screen-slot dark">
+          <div class="screen-top">
+            <div class="screen-dots"><div class="sdot sd1"></div><div class="sdot sd2"></div><div class="sdot sd3"></div></div>
+            <div class="screen-label-bar">Финансовая игра «Играй и зарабатывай»</div>
+          </div>
+          <div class="screen-body screen-body-tall">
+            <div class="screen-ph">4 уровня:<br>продукты банка<br>в формате сторителлинга</div>
+          </div>
+          <div class="screen-caption">🎮 Игра в формате сторителлинга раскрывает продукты банка и имитирует флоу оформления — убирает барьер «первого касания»</div>
+        </div>
+        <div class="screen-slot">
+          <div class="screen-top">
+            <div class="screen-dots"><div class="sdot sd1"></div><div class="sdot sd2"></div><div class="sdot sd3"></div></div>
+            <div class="screen-label-bar">Мои Финансы — экран продуктов</div>
+          </div>
+          <div class="screen-body screen-body-tall">
+            <div class="screen-ph">Все карты и счета:<br>сумма + пассивный<br>доход за всё время</div>
+          </div>
+          <div class="screen-caption">💰 Positive framing: акцент на доходе от продуктов банка мотивирует хранить средства здесь, а не в цифровом рубле</div>
+        </div>
+      </div>
+      <div style="margin-top:16px">
+        <div style="font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">Все 6 решений</div>
+        <div class="mobile-slots rv">
+          <div class="mobile-slot">
+            <div class="mobile-notch"><div class="mobile-notch-bar"></div></div>
+            <div class="mobile-screen"><div class="screen-ph">Говорит<br>Альфа:<br>инфо в кризис</div></div>
+            <div class="mobile-caption">1. Коммуникация в кризис</div>
+          </div>
+          <div class="mobile-slot">
+            <div class="mobile-notch"><div class="mobile-notch-bar"></div></div>
+            <div class="mobile-screen"><div class="screen-ph">Всё уже<br>застраховано:<br>до 1,4 млн ₽</div></div>
+            <div class="mobile-caption">2. Страхование вкладов</div>
+          </div>
+          <div class="mobile-slot">
+            <div class="mobile-notch"><div class="mobile-notch-bar"></div></div>
+            <div class="mobile-screen"><div class="screen-ph">Цифровой<br>рубль:<br>«Запросить»</div></div>
+            <div class="mobile-caption">3. Простой вывод ЦР</div>
+          </div>
+          <div class="mobile-slot">
+            <div class="mobile-notch"><div class="mobile-notch-bar"></div></div>
+            <div class="mobile-screen"><div class="screen-ph">Источники<br>дохода:<br>+12 245 ₽</div></div>
+            <div class="mobile-caption">4–5. Финансы + доход</div>
+          </div>
+          <div class="mobile-slot">
+            <div class="mobile-notch"><div class="mobile-notch-bar"></div></div>
+            <div class="mobile-screen"><div class="screen-ph">Финансовая<br>игра:<br>4 уровня</div></div>
+            <div class="mobile-caption">6. Геймификация</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="sec" id="results">
+      <div class="sec-head">
+        <span class="sec-label">06 — Результат</span>
+        <h2 class="sec-title">Что получилось</h2>
+      </div>
+      <div class="results-nums rv">
+        <div class="rn">
+          <div class="rn-head">
+            <div class="rn-num">5</div>
+            <div class="rn-label">Дней — полный<br>цикл соло</div>
+          </div>
+          <div class="rn-ctx">4 из 4 дедлайнов соблюдены</div>
+        </div>
+        <div class="rn">
+          <div class="rn-head">
+            <div class="rn-num">6</div>
+            <div class="rn-label">Дизайн-решений<br>в комплексе</div>
+          </div>
+          <div class="rn-ctx">Стратегический горизонт</div>
+        </div>
+        <div class="rn" style="background:var(--accent)">
+          <div class="rn-head">
+            <div class="rn-num" style="font-size:22px;line-height:1.2;margin-bottom:10px">✓</div>
+            <div class="rn-label" style="color:rgba(255,255,255,.6)">Гипотеза подтверждена данными</div>
+          </div>
+          <div class="rn-ctx" style="color:rgba(255,255,255,.4)">Исследование — основа каждого решения</div>
+        </div>
+      </div>
+      <div class="results-impact rv">
+        <div class="ri-card">
+          <div class="ri-title">Почему решение стратегическое</div>
+          <ul class="ri-list">
+            <li>Накопительный счёт и вклады — конкурентное преимущество перед цифровым рублём: ЦБ не позволяет создавать вклады в ЦР</li>
+            <li>Финансовая игра убирает барьер «первого касания» с продуктами банка: знакомый флоу в безопасной среде</li>
+            <li>Positive framing доходов мотивирует хранить деньги в Альфа-банке, а не выводить в ЦР</li>
+            <li>Решение закрывает потребности физлиц, ИП и юрлиц — соответствует аудитории банка</li>
+          </ul>
+        </div>
+        <div class="ri-qual">
+          <div class="rq"><div class="rq-l">Формат</div><div class="rq-v">Хакатон Альфа-банка, 5 дней, соло</div></div>
+          <div class="rq"><div class="rq-l">Инструменты</div><div class="rq-v">Figma, FigJam, Miro, Notion</div></div>
+          <div class="rq"><div class="rq-l">Критерии оценки</div><div class="rq-v">Продуктовый подход, работа в неопределённости, обоснованность, реализуемость, Альфа-идентичность, сторителлинг</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFLECTION -->
+    <section class="sec" id="reflection">
+      <div class="sec-head">
+        <span class="sec-label">07 — Рефлексия</span>
+        <h2 class="sec-title">Что узнала</h2>
+      </div>
+      <div class="refl-grid rv">
+        <div class="refl-card">
+          <span class="refl-icon">💡</span>
+          <div class="refl-title">Главный инсайт</div>
+          <div class="refl-text">Когда задача размытая — нужно сначала понять бизнес-проблему, а не только пользовательскую. Именно погружение в стратегию банка и угрозу цифрового рубля позволило создать не «однодневку», а решение с долгосрочной ценностью для компании.</div>
+        </div>
+        <div class="refl-card">
+          <span class="refl-icon">🔄</span>
+          <div class="refl-title">Что сделала бы иначе</div>
+          <div class="refl-text">Реализовать Product Vision оказалось проще, чем предполагалось — исследование дало такую плотную базу, что решения выросли из данных сами. В следующий раз раньше бы перешла к скетчам: часть времени на анализ можно было посвятить проверке прототипа на пользователях.</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+
+<!-- CTA -->
+<div class="case-cta dot-pattern">
+  <div class="cta-wrap">
+    <a href="aura.html" class="next-card">
+      <div class="nc-tags"><span class="nc-tag">Game</span><span class="nc-tag">Mobile</span></div>
+      <div class="nc-title">AURA Game — приложение для споров с друзьями</div>
+      <div class="nc-arr">→</div>
+    </a>
+    <a href="b2c.html" class="next-card">
+      <div class="nc-tags"><span class="nc-tag">B2C</span><span class="nc-tag">TravelTech</span></div>
+      <div class="nc-title">Пришла обновить калькулятор — переосмыслила весь путь к покупке</div>
+      <div class="nc-arr">→</div>
+    </a>
+  </div>
+</div>
+
+<!-- CONTACTS -->
+<section class="contacts" id="contacts">
+  <div class="contacts-inner">
+    <div class="contacts-left">
+      <div class="c-label">Открыта к офферам</div>
+      <h2 class="c-title">Обсудим задачу?</h2>
+      <p class="c-sub">Готова к полной занятости и проектному сотрудничеству.</p>
+      <a href="https://t.me/ValeriyaWithLove" target="_blank" class="c-btn">Написать в Telegram</a>
+    </div>
+    <div class="contacts-right">
+      <a href="https://t.me/ValeriyaWithLove" target="_blank" class="c-link">
+        <span class="c-link-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg></span>
+        <span class="c-link-name">Telegram</span>
+        <span class="c-link-val"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a href="https://linkedin.com/in/valeriiapon" target="_blank" class="c-link">
+        <span class="c-link-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span>
+        <span class="c-link-name">LinkedIn</span>
+        <span class="c-link-val"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a href="https://dribbble.com/lerchikper13" target="_blank" class="c-link">
+        <span class="c-link-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 6.628 5.374 12 12 12 6.627 0 12-5.372 12-12 0-6.627-5.373-12-12-12zm7.949 5.672c1.418 1.738 2.272 3.963 2.297 6.381-.336-.072-3.706-.752-7.098-.325-.077-.188-.149-.383-.227-.578-.216-.545-.455-1.093-.693-1.621 3.766-1.536 5.482-3.743 5.721-3.857zm-1.378-1.467c-.213.289-1.762 2.37-5.398 3.734-1.688-3.1-3.558-5.641-3.854-6.051A10.065 10.065 0 0 1 12 2.051c2.456 0 4.71.879 6.571 2.154zM5.915 2.667c.285.389 2.131 2.943 3.843 5.998-4.84 1.285-9.115 1.261-9.583 1.254A10.058 10.058 0 0 1 5.915 2.667zM2.02 12.01v-.264c.456.009 5.528.073 10.699-1.485.3.588.584 1.18.843 1.776-.135.038-.271.077-.403.119-5.363 1.727-8.209 6.438-8.452 6.844A9.959 9.959 0 0 1 2.02 12.01zm10.002 9.97a9.97 9.97 0 0 1-6.017-2.013c.2-.393 2.483-4.804 8.4-6.88l.072-.023a35.766 35.766 0 0 1 1.848 6.571 9.96 9.96 0 0 1-4.303 2.345zm6.121-1.548a37.67 37.67 0 0 0-1.706-6.144c2.767-.443 5.193.284 5.509.379a10.027 10.027 0 0 1-3.803 5.765z"/></svg></span>
+        <span class="c-link-name">Dribbble</span>
+        <span class="c-link-val"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a href="https://behance.net/ponkrasova840e" target="_blank" class="c-link">
+        <span class="c-link-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.938 4.503c.702 0 1.34.06 1.92.188.577.13 1.07.33 1.485.61.41.28.733.65.96 1.12.225.47.34 1.05.34 1.73 0 .74-.17 1.36-.507 1.86-.338.5-.837.9-1.502 1.22.906.26 1.576.72 2.022 1.37.448.64.665 1.41.665 2.32 0 .74-.14 1.38-.42 1.92-.28.54-.67.98-1.16 1.32-.49.34-1.05.59-1.68.75-.63.16-1.29.24-1.98.24H0V4.503h6.938zm-.56 5.26c.585 0 1.07-.14 1.45-.42.38-.28.57-.72.57-1.32 0-.33-.06-.61-.18-.83-.12-.22-.28-.4-.49-.53-.21-.13-.45-.22-.72-.27-.27-.05-.56-.08-.87-.08H3.24v3.45h3.14zm.16 5.52c.34 0 .66-.03.96-.1.3-.07.56-.18.78-.33.22-.16.4-.36.53-.62.13-.26.19-.58.19-.96 0-.76-.22-1.31-.67-1.64-.45-.33-1.05-.49-1.8-.49H3.24v4.14h3.3zm8.96.5l1.3-3.63 1.31 3.63h-2.61zm1.31-9.82l-4.48 12.38h2.7l.89-2.55h3.72l.91 2.55h2.76l-4.5-12.38h-2zm5.72-1.49V3.36h-5.78v1.11h5.78z"/></svg></span>
+        <span class="c-link-name">Behance</span>
+        <span class="c-link-val"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+  <div class="footer-inner">
+    <span class="foot-logo">THE VAL</span>
+    <span class="foot-copy">© 2026 · Понкрашова Валерия · Санкт-Петербург</span>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/preview-scroll.js"></script>
+</body>
+</html>
