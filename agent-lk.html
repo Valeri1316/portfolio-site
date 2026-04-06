@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Кейс 03 — ЛК агента с нуля · Валерия Понкрашова</title>
+<title>Кейс 03 — ЛК агента с нуля · Валерия Понкрашова</title>
 <meta name="description" content="Редизайн ЛК турагента: −45,3% к времени обработки заявки. B2B2C, туризм.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
@@ -32,6 +32,7 @@
         </svg>
       </a>
     </div>
+    <a href="https://t.me/ValeriyaWithLove" target="_blank" class="nav-tg"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg><span class="hero-tg-brand">Telegram</span></a>
     <button class="hbg" id="hbg" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -45,10 +46,10 @@
         <span class="htag">SAAS</span>
       </div>
       <h1 class="hero-h1">
-        ЛК агента: −45,3% времени на заявку<br>и восхищенные отзывы
+        ЛК агента: −45,3% времени на заявку<br>и восхищенные отзывы
       </h1>
       <div class="hero-tldr">
-        <span class="hero-tldr-text">Агенты саботировали инструмент и уходили к конкурентам. Я зашла как единственный дизайнер с PO-функциями: сформировала продуктовое видение, провела исследование, спроектировала архитектуру с нуля и запустила MVP.</span>
+        <span class="hero-tldr-text">Агенты саботировали инструмент и уходили к конкурентам. Я зашла как единственный дизайнер с PO-функциями: сформировала продуктовое видение, провела исследование, спроектировала архитектуру с нуля и запустила MVP.</span>
       </div>
     </div>
   </div>
@@ -77,18 +78,20 @@
 
   <!-- SIDE NAV -->
   <div class="side-time">~5 мин чтения</div>
-  <aside class="side-nav">
-    <ul class="side-nav-list">
-      <li class="side-nav-item"><a href="#context"    data-sec="context">Контекст</a></li>
-      <li class="side-nav-item"><a href="#role"       data-sec="role">Роль</a></li>
-      <li class="side-nav-item"><a href="#research"   data-sec="research">Исследование</a></li>
-      <li class="side-nav-item"><a href="#problem"    data-sec="problem">Проблема</a></li>
-      <li class="side-nav-item"><a href="#process"    data-sec="process">Процесс</a></li>
-      <li class="side-nav-item" style="display:none"><a href="#screens"    data-sec="screens">Решения</a></li>
-      <li class="side-nav-item"><a href="#results"    data-sec="results">Результат</a></li>
-      <li class="side-nav-item" style="display:none"><a href="#reflection" data-sec="reflection">Рефлексия</a></li>
-    </ul>
-  </aside>
+  <div class="side-col">
+    <aside class="side-nav">
+      <ul class="side-nav-list">
+        <li class="side-nav-item"><a href="#context"    data-sec="context">Контекст</a></li>
+        <li class="side-nav-item"><a href="#role"       data-sec="role">Роль</a></li>
+        <li class="side-nav-item"><a href="#research"   data-sec="research">Исследование</a></li>
+        <li class="side-nav-item"><a href="#problem"    data-sec="problem">Проблема</a></li>
+        <li class="side-nav-item"><a href="#process"    data-sec="process">Процесс</a></li>
+        <li class="side-nav-item" style="display:none"><a href="#screens"    data-sec="screens">Решения</a></li>
+        <li class="side-nav-item"><a href="#results"    data-sec="results">Результат</a></li>
+        <li class="side-nav-item" style="display:none"><a href="#reflection" data-sec="reflection">Рефлексия</a></li>
+      </ul>
+    </aside>
+  </div>
 
   <!-- MAIN -->
   <main class="main-content">
@@ -98,28 +101,28 @@
       <div class="sec-head">
         <span class="sec-label">01 — Контекст</span>
         <h2 class="sec-title">Бизнес-задача</h2>
-        <p class="sec-sub">«Неудобный интерфейс» — дыра в воронке продаж</p>
+        <p class="sec-sub">«Неудобный интерфейс» — дыра в воронке продаж</p>
       </div>
       <div class="ctx-grid rv">
         <div class="ctx-card">
           <span class="ctx-card-label">Проблема бизнеса</span>
-          <h3 class="ctx-card-title">Агенты работали в чужом инструменте. И это стоило денег</h3>
-          <p>У заказчика был «Личный кабинет агента». Агенты им почти не пользовались — постоянные ошибки, звонки в поддержку, данные в аналитике недостоверные. Временное решение — встроить агентский функционал в B2C-сайт — сделало только хуже: агенты путались в интерфейсе, дублировали заявки, случайно использовали B2C-функционал и искажали данные.
-Это не UX-проблема. Это потеря доходов и потеря доверия агентов — канала, который напрямую влияет на долю рынка.</p>
+          <h3 class="ctx-card-title">Агенты работали в чужом инструменте. И это стоило денег</h3>
+          <p>У заказчика был «Личный кабинет агента». Агенты им почти не пользовались — постоянные ошибки, звонки в поддержку, данные в аналитике недостоверные. Временное решение — встроить агентский функционал в B2C-сайт — сделало только хуже: агенты путались в интерфейсе, дублировали заявки, случайно использовали B2C-функционал и искажали данные.
+Это не UX-проблема. Это потеря доходов и потеря доверия агентов — канала, который напрямую влияет на долю рынка.</p>
           <div class="constraints">
             <div class="cst"><span class="cst-badge b-tech">01</span><span>Повысить лояльность агентов → вырастить объём продаж</span></div>
-            <div class="cst"><span class="cst-badge b-biz">02</span><span>Снизить ошибки и нагрузку на поддержку</span></div>
-            <div class="cst"><span class="cst-badge b-ux">03</span><span>Восстановить чистоту данных для аналитики</span></div>
+            <div class="cst"><span class="cst-badge b-biz">02</span><span>Снизить ошибки и нагрузку на поддержку</span></div>
+            <div class="cst"><span class="cst-badge b-ux">03</span><span>Восстановить чистоту данных для аналитики</span></div>
           </div>
         </div>
         <div class="ctx-card dark">
           <span class="ctx-card-label">Цель продукта</span>
-          <h3 class="ctx-card-title">Служить агентам, чтобы увеличить объём продаж и долю рынка компании</h3>
-          <p>Не упростить интерфейс ради упрощения. Убрать всё, что тормозит продажу, и добавить всё, что её ускоряет. Инструмент должен работать за агента — тогда агент продаёт больше.</p>
+          <h3 class="ctx-card-title">Служить агентам, чтобы увеличить объём продаж и долю рынка компании</h3>
+          <p>Не упростить интерфейс ради упрощения. Убрать всё, что тормозит продажу, и добавить всё, что её ускоряет. Инструмент должен работать за агента — тогда агент продаёт больше.</p>
           <div class="metrics-cloud">
             <span class="mc">AHT: ≤ 20 мин.</span><span class="mc">Retention Rate агентов</span>
-            <span class="mc">GMV</span><span class="mc">Ошибки в заявках</span>
-            <span class="mc">Нагрузка на поддержку</span>
+            <span class="mc">GMV</span><span class="mc">Ошибки в заявках</span>
+            <span class="mc">Нагрузка на поддержку</span>
           </div>
         </div>
       </div>
@@ -130,21 +133,21 @@
       <div class="sec-head">
         <span class="sec-label">02 — Роль</span>
         <h2 class="sec-title">Мой вклад</h2>
-        <p class="sec-sub">На проекте не было выделенного Product Owner'а. Я взяла на себя полный цикл: от формирования продуктового видения до дизайн-ревью после запуска</p>
+        <p class="sec-sub">На проекте не было выделенного Product Owner'а. Я взяла на себя полный цикл: от формирования продуктового видения до дизайн-ревью после запуска</p>
 
       </div>
       <div class="role-layout rv">
         <div class="role-card">
           <div class="role-chips">
-            <span class="chip chip-dark">Product Designer с функциями PO</span>
+            <span class="chip chip-dark">Product Designer с функциями PO</span>
           </div>
           <ul class="role-list">
             <li>Сформировала продуктовое видение, приоритизировала бэклог</li>
-            <li>Провела исследование двух типов пользователей: коридорный тест по CJM-сценарию</li>
-            <li>Совместно с аналитиком — конкурентный анализ 8 игроков рынка</li>
+            <li>Провела исследование двух типов пользователей: коридорный тест по CJM-сценарию</li>
+            <li>Совместно с аналитиком — конкурентный анализ 8 игроков рынка</li>
             <li>Создала все артефакты: User Flow, IA, wireframes, прототипы</li>
-            <li>Пушила продуктовый процесс в разработке, проводила дизайн-ревью</li>
-            <li>Поддерживала дизайн-систему, создавала новые компоненты для ERP</li>
+            <li>Пушила продуктовый процесс в разработке, проводила дизайн-ревью</li>
+            <li>Поддерживала дизайн-систему, создавала новые компоненты для ERP</li>
           </ul>
         </div>
         <div class="team-card">
@@ -159,44 +162,44 @@
     <section class="sec" id="research">
       <div class="sec-head">
         <span class="sec-label">03 — Исследование</span>
-        <h2 class="sec-title">Понять агента раньше, чем проектировать</h2>
-        <p class="sec-sub">5 глубинных интервью с агентами + руководитель агентского отдела + анализ 8 конкурентов. Коридорный тест по CJM-сценарию — проверяли эффективность всего флоу целиком, не отдельных элементов</p>
+        <h2 class="sec-title">Понять агента раньше, чем проектировать</h2>
+        <p class="sec-sub">5 глубинных интервью с агентами + руководитель агентского отдела + анализ 8 конкурентов. Коридорный тест по CJM-сценарию — проверяли эффективность всего флоу целиком, не отдельных элементов</p>
       </div>
       <div class="research-flow rv">
         <div class="rf-item">
           <div class="rf-icon">🎙</div>
           <div class="rf-title">Тип 1: новички</div>
           <div class="rf-result">Базовые UX-барьеры</div>
-          <div class="rf-text">Учла специфику рынка: в туризме постоянный приток новых агентов, которым нужен интерфейс с порогом входа около нуля</div>
+          <div class="rf-text">Учла специфику рынка: в туризме постоянный приток новых агентов, которым нужен интерфейс с порогом входа около нуля</div>
         </div>
         <div class="rf-item">
           <div class="rf-icon">💼</div>
           <div class="rf-title">Тип 2: агенты</div>
-          <div class="rf-result">Рабочие боли в процессе</div>
-          <div class="rf-text">Дали самые ценные инсайты: хотят видеть комиссию по каждой услуге прямо в момент оформления, менять тур в процессе бронирования, вносить данные в той последовательности, в которой они приходят из заявки их компании</div>
+          <div class="rf-result">Рабочие боли в процессе</div>
+          <div class="rf-text">Дали самые ценные инсайты: хотят видеть комиссию по каждой услуге прямо в момент оформления, менять тур в процессе бронирования, вносить данные в той последовательности, в которой они приходят из заявки их компании</div>
         </div>
         <div class="rf-item">
           <div class="rf-icon">🔎</div>
           <div class="rf-title">8 конкурентов</div>
           <div class="rf-result"> Инсайдерский доступ</div>
-          <div class="rf-text">Результат: наш кабинет проигрывал по всем ключевым параметрам — от UX/UI и набора фич до скорости загрузки</div>
+          <div class="rf-text">Результат: наш кабинет проигрывал по всем ключевым параметрам — от UX/UI и набора фич до скорости загрузки</div>
         </div>
         <div class="rf-item">
           <div class="rf-icon">🗺</div>
           <div class="rf-title">CJM-сценарий</div>
-          <div class="rf-result">Полный флоу под проверкой</div>
-          <div class="rf-text">Метод: коридорный тест по CJM-сценарию. Новый интерфейс делится на шаги — пошаговое тестирование дало максимум данных</div>
+          <div class="rf-result">Полный флоу под проверкой</div>
+          <div class="rf-text">Метод: коридорный тест по CJM-сценарию. Новый интерфейс делится на шаги — пошаговое тестирование дало максимум данных</div>
         </div>
         <div class="rf-item">
           <div class="rf-icon">📐</div>
           <div class="rf-title">IA + бэклог</div>
           <div class="rf-result">26+ гипотез проверено</div>
-          <div class="rf-text">Приоритизация гипотез на основе исследования. 26+ гипотез → бэклог с обоснованием для команды</div>
+          <div class="rf-text">Приоритизация гипотез на основе исследования. 26+ гипотез → бэклог с обоснованием для команды</div>
         </div>
       </div>
       <div class="insight-strip rv">
         <span class="is-label">Инсайт конкурентного анализа</span>
-        <span class="is-text">На рынке нет единого стандарта оформления заявки — каждый процесс заточен под свою бизнес-модель. <em style="color:rgba(255,255,255,.4);font-style:normal">Спроектировали под наш B2B2C-сценарий с нуля — это дало свободу и стало конкурентным преимуществом.</em></span>
+        <span class="is-text">На рынке нет единого стандарта оформления заявки — каждый процесс заточен под свою бизнес-модель. <em style="color:rgba(255,255,255,.4);font-style:normal">Спроектировали под наш B2B2C-сценарий с нуля — это дало свободу и стало конкурентным преимуществом.</em></span>
       </div>
     </section>
 
@@ -204,37 +207,37 @@
     <section class="sec" id="problem">
       <div class="sec-head">
         <span class="sec-label">04 — Проблема</span>
-        <h2 class="sec-title">Что на самом деле ломало продажи</h2>
+        <h2 class="sec-title">Что на самом деле ломало продажи</h2>
       </div>
       <div class="hmw rv">
         <span class="hmw-lbl">Инсайт 1 — Фильтр B2C вредит агенту</span>
-        <p class="hmw-q">У туриста и агента одна цель — найти тур. <em>Но нужные им параметры фильтрации — разные.</em> Переиспользование готового B2C-фильтра создавало трение при каждой рабочей сессии.</p>
+        <p class="hmw-q">У туриста и агента одна цель — найти тур. <em>Но нужные им параметры фильтрации — разные.</em> Переиспользование готового B2C-фильтра создавало трение при каждой рабочей сессии.</p>
       </div>
       <div class="problem-cols rv">
         <div class="pc">
           <div class="pc-lv">Инсайт 2 — Процесс</div>
           <div class="pc-title">Интерфейс против рабочего процесса</div>
-          <div class="pc-text">Агенты вносят данные в той последовательности, в которой они поступают из заявки их компании. Старый кабинет требовал ручной переноски данных — это тормозило работу и множило ошибки. Цена каждой ошибки — потенциально потерянная заявка.</div>
+          <div class="pc-text">Агенты вносят данные в той последовательности, в которой они поступают из заявки их компании. Старый кабинет требовал ручной переноски данных — это тормозило работу и множило ошибки. Цена каждой ошибки — потенциально потерянная заявка.</div>
         </div>
         <div class="pc">
           <div class="pc-lv">Инсайт 3 — Мотивация</div>
           <div class="pc-title">Прозрачная комиссия = инструмент допродаж</div>
-          <div class="pc-text">Если агент видит свой заработок при оформлении заявки — это мотивирует пользоваться инструментом и продавать больше доп. услуг. У конкурентов такой фичи не было. Это не просто UX-решение — это точка роста GMV.</div>
+          <div class="pc-text">Если агент видит свой заработок при оформлении заявки — это мотивирует пользоваться инструментом и продавать больше доп. услуг. У конкурентов такой фичи не было. Это не просто UX-решение — это точка роста GMV.</div>
         </div>
         <div class="pc">
           <div class="pc-lv">Инсайт 4 — Данные</div>
           <div class="pc-title">Паспортные данные теряются системно</div>
-          <div class="pc-text">Для агентов паспортные данные туристов казались лишними — они не влияют напрямую на их работу. Откладывали на потом, забывали. Аналитика была сломана. </div>
+          <div class="pc-text">Для агентов паспортные данные туристов казались лишними — они не влияют напрямую на их работу. Откладывали на потом, забывали. Аналитика была сломана. </div>
         </div>
         <div class="pc">
           <div class="pc-lv">Инсайт 5 — Гибкость</div>
           <div class="pc-title">Негибкое бронирование = потерянные заявки</div>
-          <div class="pc-text">Смена тура и даты происходит часто и по разным причинам. Без этой возможности агенты создавали заявки заново — измеримые потери на операционном уровне</div>
+          <div class="pc-text">Смена тура и даты происходит часто и по разным причинам. Без этой возможности агенты создавали заявки заново — измеримые потери на операционном уровне</div>
         </div>
         <div class="pc">
           <div class="pc-lv">Инсайт 6 — фичи</div>
-          <div class="pc-title">Барьер для эффективных продаж</div>
-          <div class="pc-text">Слабый поиск и невозможность быстро поделиться программой тура с клиентом создавали барьеры на пути к сделке. Агенты не видели специальных акций и не понимали структуру своего заработка.</div>
+          <div class="pc-title">Барьер для эффективных продаж</div>
+          <div class="pc-text">Слабый поиск и невозможность быстро поделиться программой тура с клиентом создавали барьеры на пути к сделке. Агенты не видели специальных акций и не понимали структуру своего заработка.</div>
         </div>
       </div>
     </section>
@@ -244,18 +247,18 @@
       <div class="sec-head">
         <span class="sec-label">05 — Процесс</span>
         <h2 class="sec-title">Как работали</h2>
-        <p class="sec-sub">Учла базы данных агентов, клиентов, менеджеров,сайта и соблюла консистентность данных</p>
+        <p class="sec-sub">Учла базы данных агентов, клиентов, менеджеров,сайта и соблюла консистентность данных</p>
       </div>
       <div class="process-stages rv">
         <div class="ps">
           <div class="ps-num done">1</div>
           <div class="ps-stage-label">Discovery</div>
-          <div class="ps-title">Погружение и исследование</div>
+          <div class="ps-title">Погружение и исследование</div>
           <div class="ps-tags"><span class="ps-tag">Интервью</span><span class="ps-tag">CJM</span></div>
           <div class="ps-items">
-            <div class="ps-item">Интервью с агентами и руководителем отдела</div>
-            <div class="ps-item">Анализ 8 конкурентов совместно с аналитиком</div>
-            <div class="ps-item">Погружение во внутренние бизнес-процессы</div>
+            <div class="ps-item">Интервью с агентами и руководителем отдела</div>
+            <div class="ps-item">Анализ 8 конкурентов совместно с аналитиком</div>
+            <div class="ps-item">Погружение во внутренние бизнес-процессы</div>
             <div class="ps-item">26+ гипотез → приоритизация → бэклог</div>
           </div>
         </div>
@@ -265,21 +268,21 @@
           <div class="ps-title">Единая экосистема вместо 4 систем</div>
           <div class="ps-tags"><span class="ps-tag">IA</span><span class="ps-tag">Wireframes</span></div>
           <div class="ps-items">
-            <div class="ps-item">User Flow с учётом ролей, Information Architecture</div>
-            <div class="ps-item">IA синхронизирует базы данных клиентов, менеджеров и сайта</div>
-            <div class="ps-item">Wireframes → прототипы в Figma</div>
-            <div class="ps-item">Обсуждение ограничений с разработчиками, защита перед командой</div>
+            <div class="ps-item">User Flow с учётом ролей, Information Architecture</div>
+            <div class="ps-item">IA синхронизирует базы данных клиентов, менеджеров и сайта</div>
+            <div class="ps-item">Wireframes → прототипы в Figma</div>
+            <div class="ps-item">Обсуждение ограничений с разработчиками, защита перед командой</div>
           </div>
         </div>
         <div class="ps">
           <div class="ps-num done">3</div>
           <div class="ps-stage-label">Валидация</div>
-          <div class="ps-title">Проверить на реальных пользователях</div>
+          <div class="ps-title">Проверить на реальных пользователях</div>
           <div class="ps-tags"><span class="ps-tag">ЮТ</span><span class="ps-tag">Hi-fi</span></div>
           <div class="ps-items">
-            <div class="ps-item">Коридорный тест по CJM-сценарию, 2 типа респондентов</div>
-            <div class="ps-item">Правки по результатам теста</div>
-            <div class="ps-item">Дизайн-ревью, передача в разработку</div>
+            <div class="ps-item">Коридорный тест по CJM-сценарию, 2 типа респондентов</div>
+            <div class="ps-item">Правки по результатам теста</div>
+            <div class="ps-item">Дизайн-ревью, передача в разработку</div>
             <div class="ps-item">Дизайн-система: Ant Design + новые ERP-компоненты</div>
           </div>
         </div>
@@ -291,7 +294,7 @@
       <div class="sec-head">
         <span class="sec-label">06 — Дизайн-решения</span>
         <h2 class="sec-title">Ключевые экраны</h2>
-        <p class="sec-sub">Решения, которые дали ×3 к скорости</p>
+        <p class="sec-sub">Решения, которые дали ×3 к скорости</p>
       </div>
       <div class="screens-grid rv">
         <div class="screen-slot dark">
@@ -302,7 +305,7 @@
           <div class="screen-body screen-body-tall">
             <div class="screen-ph">Главная страница ЛК:<br>статусы, быстрые действия,<br>ключевые метрики</div>
           </div>
-          <div class="screen-caption">📊 Дашборд с приоритизацией: сначала — что требует действия, потом — статистика</div>
+          <div class="screen-caption">📊 Дашборд с приоритизацией: сначала — что требует действия, потом — статистика</div>
         </div>
         <div class="screen-slot">
           <div class="screen-top">
@@ -310,9 +313,9 @@
             <div class="screen-label-bar">Дашборд — старый (до)</div>
           </div>
           <div class="screen-body screen-body-tall">
-            <div class="screen-ph">Старый интерфейс:<br>перегрузка, нет иерархии,<br>всё одним списком</div>
+            <div class="screen-ph">Старый интерфейс:<br>перегрузка, нет иерархии,<br>всё одним списком</div>
           </div>
-          <div class="screen-caption">⚠ 40+ элементов без иерархии — агент не понимал, с чего начать</div>
+          <div class="screen-caption">⚠ 40+ элементов без иерархии — агент не понимал, с чего начать</div>
         </div>
       </div>
       <div class="screens-row rv">
@@ -322,9 +325,9 @@
             <div class="screen-label-bar">Wizard-форма — шаг 1/4</div>
           </div>
           <div class="screen-body">
-            <div class="screen-ph">Оформление полиса:<br>разбито на 4 шага,<br>прогресс-бар сверху</div>
+            <div class="screen-ph">Оформление полиса:<br>разбито на 4 шага,<br>прогресс-бар сверху</div>
           </div>
-          <div class="screen-caption">🧭 Wizard-форма: один шаг — один фокус. Агент видит прогресс и не теряется</div>
+          <div class="screen-caption">🧭 Wizard-форма: один шаг — один фокус. Агент видит прогресс и не теряется</div>
         </div>
         <div class="screen-slot">
           <div class="screen-top">
@@ -332,9 +335,9 @@
             <div class="screen-label-bar">Трекер статусов</div>
           </div>
           <div class="screen-body">
-            <div class="screen-ph">Реальный статус заявки:<br>этапы, даты, комментарии<br>от андеррайтера</div>
+            <div class="screen-ph">Реальный статус заявки:<br>этапы, даты, комментарии<br>от андеррайтера</div>
           </div>
-          <div class="screen-caption">🔔 Статус в реальном времени — агент не звонит в поддержку</div>
+          <div class="screen-caption">🔔 Статус в реальном времени — агент не звонит в поддержку</div>
         </div>
       </div>
     </section>
@@ -356,33 +359,33 @@
         <div class="rn" style="background:var(--accent)">
           <div class="rn-head">
             <div class="rn-num" style="font-size:26px;line-height:1.2;margin-bottom:10px">✓</div>
-            <div class="rn-label" style="color:rgba(255,255,255,.6)">Положительные отзывы агентов</div>
+            <div class="rn-label" style="color:rgba(255,255,255,.9)">Положительные отзывы агентов</div>
           </div>
-          <div class="rn-ctx" style="color:rgba(255,255,255,.4)">Новый ЛК решает реальные задачи</div>
+          <div class="rn-ctx" style="color:rgba(255,255,255,.9)">Новый ЛК решает реальные задачи</div>
         </div>
       </div>
       <div class="insight-strip rv" style="margin-bottom:24px">
         <span class="is-label">Фидбэк агентов</span>
-        <span class="is-text">Систему высоко оценили наши агенты. Их положительные отзывы — лучшее подтверждение, что мы выбрали верный путь, создавая не просто интерфейс, а продуманного партнёра для продаж.</span>
+        <span class="is-text">Систему высоко оценили наши агенты. Их положительные отзывы — лучшее подтверждение, что мы выбрали верный путь, создавая не просто интерфейс, а продуманного партнёра для продаж.</span>
       </div>
       <div class="results-impact rv">
         <div class="ri-card">
-          <div class="ri-title">Влияние на бизнес</div>
+          <div class="ri-title">Влияние на бизнес</div>
           <ul class="ri-list">
-            <li>Менеджер больше не тратит время на ручной перенос данных между системами</li>
-            <li>Клиенты всегда видят актуальную информацию о своих заявках</li>
-            <li>Снизилось количество ошибок из-за человеческого фактора</li>
-            <li>Данные для аналитики собираются автоматически из единого источника</li>
-            <li>После первого месяца — анализ метрик, точечные правки, A/B тесты, выпуск фич из бэклога</li>
+            <li>Менеджер больше не тратит время на ручной перенос данных между системами</li>
+            <li>Клиенты всегда видят актуальную информацию о своих заявках</li>
+            <li>Снизилось количество ошибок из-за человеческого фактора</li>
+            <li>Данные для аналитики собираются автоматически из единого источника</li>
+            <li>После первого месяца — анализ метрик, точечные правки, A/B тесты, выпуск фич из бэклога</li>
           </ul>
         </div>
         <div class="ri-qual" style="margin-bottom:0">
-          <div class="rq" style="flex:1"><div class="rq-l">Что было дальше?</div><div class="rq-v">Продолжили развивать проект. После первого месяца исследовали отчёт аналитика и поведение пользователей, оперативно подправили тонкие места. Далее — таски из бэклога, предварительно пропустив изменения через A/B тесты</div></div>
+          <div class="rq" style="flex:1"><div class="rq-l">Что было дальше?</div><div class="rq-v">Продолжили развивать проект. После первого месяца исследовали отчёт аналитика и поведение пользователей, оперативно подправили тонкие места. Далее — таски из бэклога, предварительно пропустив изменения через A/B тесты</div></div>
         </div>
       </div>
       <div class="nda-disclaimer" style="margin-top:40px;justify-content:flex-start">
         <span class="nda-icon"><i class="fa fa-info-circle"></i></span>
-        <p><strong>NDA disclaimer:</strong> Изображения на этой странице — черновики, концепции или высокоточные макеты, не отражающие финальный продукт.<br>Все имена, числа, заголовки и данные вымышлены. Логика, методология и результаты — реальные.</p>
+        <p><strong>NDA disclaimer:</strong> Изображения на этой странице — черновики, концепции или высокоточные макеты, не отражающие финальный продукт.<br>Все имена, числа, заголовки и данные вымышлены. Логика, методология и результаты — реальные.</p>
       </div>
     </section>
 
@@ -396,12 +399,12 @@
         <div class="refl-card">
           <span class="refl-icon">💡</span>
           <div class="refl-title">Главный инсайт</div>
-          <div class="refl-text">«Сделать проще» — не всегда правильный вектор для B2B. Опытный пользователь хочет скорость и контроль, а не упрощение. Ключ — адаптивный интерфейс: умный по умолчанию, подробный — по запросу.</div>
+          <div class="refl-text">«Сделать проще» — не всегда правильный вектор для B2B. Опытный пользователь хочет скорость и контроль, а не упрощение. Ключ — адаптивный интерфейс: умный по умолчанию, подробный — по запросу.</div>
         </div>
         <div class="refl-card">
           <span class="refl-icon">🔄</span>
-          <div class="refl-title">Что сделала бы иначе</div>
-          <div class="refl-text">Раньше бы отделила NPS-исследование от CJM — в этом проекте я совмещала, и это давало слишком широкий фокус. Два разных артефакта дали бы более чистые инсайты. Зато это научило меня лучше структурировать ресёрч-гайды.</div>
+          <div class="refl-title">Что сделала бы иначе</div>
+          <div class="refl-text">Раньше бы отделила NPS-исследование от CJM — в этом проекте я совмещала, и это давало слишком широкий фокус. Два разных артефакта дали бы более чистые инсайты. Зато это научило меня лучше структурировать ресёрч-гайды.</div>
         </div>
       </div>
     </section>
@@ -415,12 +418,12 @@
   <div class="cta-wrap">
     <a href="mobile.html" class="next-card">
       <div class="nc-tags"><span class="nc-tag">B2C</span><span class="nc-tag">FinTech</span></div>
-      <div class="nc-title">Альфа-банк. Подошла как продакт — доказала, что банкомат лишний</div>
+      <div class="nc-title">Альфа-банк. Подошла как продакт — доказала, что банкомат лишний</div>
       <div class="nc-arr">→</div>
     </a>
     <a href="aura.html" class="next-card">
       <div class="nc-tags"><span class="nc-tag">Game</span><span class="nc-tag">Mobile</span></div>
-      <div class="nc-title">AURA Game — приложение для споров с друзьями</div>
+      <div class="nc-title">AURA Game — приложение для споров с друзьями</div>
       <div class="nc-arr">→</div>
     </a>
   </div>
@@ -430,31 +433,31 @@
 <section class="contacts" id="contacts">
   <div class="contacts-inner">
     <div class="contacts-left">
-      <div class="c-label">Открыта к офферам</div>
+      <div class="c-label">Открыта к офферам</div>
       <h2 class="c-title">Обсудим задачу?</h2>
-      <p class="c-sub">Готова к полной занятости и проектному сотрудничеству.</p>
-      <a href="https://t.me/ValeriyaWithLove" target="_blank" class="c-btn">Написать в Telegram</a>
+      <p class="c-sub">Готова к полной занятости и проектному сотрудничеству.</p>
+      <a href="https://t.me/ValeriyaWithLove" target="_blank" class="c-btn">Написать в Telegram</a>
     </div>
     <div class="contacts-right">
-      <a href="https://t.me/ValeriyaWithLove" target="_blank" class="c-link">
-        <span class="c-link-ico">✈</span>
+      <a href="https://t.me/ValeriyaWithLove" target="_blank" class="c-link" style="display:none">
+        <span class="c-link-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg></span>
         <span class="c-link-name">Telegram</span>
-        <span class="c-link-val"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="c-link-val"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="#f5c842" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-45 8 8)"/></svg></span>
       </a>
       <a href="https://linkedin.com/in/valeriiapon" target="_blank" class="c-link">
-        <span class="c-link-ico">in</span>
+        <span class="c-link-ico"><img src="media/icon/lcon-linkedin.svg" width="24" height="24"></span>
         <span class="c-link-name">LinkedIn</span>
-        <span class="c-link-val"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="c-link-val"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="#f5c842" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-45 8 8)"/></svg></span>
       </a>
       <a href="https://dribbble.com/lerchikper13" target="_blank" class="c-link">
-        <span class="c-link-ico">Dr</span>
+        <span class="c-link-ico"><img src="media/icon/icon-dreeeble.svg" width="24" height="24"></span>
         <span class="c-link-name">Dribbble</span>
-        <span class="c-link-val"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="c-link-val"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="#f5c842" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-45 8 8)"/></svg></span>
       </a>
       <a href="https://behance.net/ponkrasova840e" target="_blank" class="c-link">
-        <span class="c-link-ico">Be</span>
+        <span class="c-link-ico"><img src="media/icon/icon-be.svg" width="24" height="24"></span>
         <span class="c-link-name">Behance</span>
-        <span class="c-link-val"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="c-link-val"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="#f5c842" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-45 8 8)"/></svg></span>
       </a>
     </div>
   </div>

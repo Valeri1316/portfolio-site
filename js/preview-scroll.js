@@ -67,12 +67,36 @@ document.addEventListener('DOMContentLoaded', function () {
     resumeTimer = setTimeout(function () { interacting = false; }, 600);
   });
 
-  // Мышь
-  preview.addEventListener('mousedown', function () {
-    interacting = true;
-    clearTimeout(resumeTimer);
-  });
-  preview.addEventListener('mouseup', function () { interacting = false; });
+  // Мышь — только десктоп (pointer: fine)
+  if (window.matchMedia('(pointer: fine)').matches) {
+    var isDragging = false;
+    var dragStartX = 0;
+
+    preview.addEventListener('mousedown', function (e) {
+      isDragging = true;
+      interacting = true;
+      dragStartX = e.clientX;
+      clearTimeout(resumeTimer);
+      preview.style.cursor = 'grabbing';
+      e.preventDefault();
+    });
+
+    document.addEventListener('mousemove', function (e) {
+      if (!isDragging) return;
+      var delta = dragStartX - e.clientX;
+      dragStartX = e.clientX;
+      x = wrap(x + delta);
+    });
+
+    document.addEventListener('mouseup', function () {
+      if (!isDragging) return;
+      isDragging = false;
+      preview.style.cursor = 'grab';
+      resumeTimer = setTimeout(function () { interacting = false; preview.style.cursor = ''; }, 800);
+    });
+
+    preview.style.cursor = 'grab';
+  }
 
   requestAnimationFrame(init);
 });

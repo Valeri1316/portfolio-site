@@ -48,7 +48,14 @@
       "Bash(awk 'NR>=200 && NR<=310' \"c:\\\\Users\\\\Surface\\\\Desktop\\\\project\\\\index.html\")",
       "WebFetch(domain:attio.com)",
       "Bash(__NEW_LINE_38a12770508969b6__ grep:*)",
-      "Bash(xargs grep:*)"
+      "Bash(xargs grep:*)",
+      "Bash(identify c:/Users/Surface/Desktop/project/media/b2e/case-b2e-1.jpg c:/Users/Surface/Desktop/project/media/b2b/case-b2b-1.jpg)",
+      "Bash(powershell -command ':*)",
+      "Bash(node -e ':*)",
+      "Bash(python -c ':*)",
+      "Bash(grep -rn \"pscroll\\\\|proactivity-scroll\" c:/Users/Surface/Desktop/project/*.html)",
+      "Bash(grep -rn \"3 года\\\\|совместной\\\\|партнёр\" c:/Users/Surface/Desktop/project/*.html)",
+      "Bash(ls c:/Users/Surface/Desktop/project/*.html)"
     ],
     "additionalDirectories": [
       "c:\\Users\\Surface\\Desktop\\project"

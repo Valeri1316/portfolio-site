@@ -8,76 +8,56 @@
 
 const CASES = [
   {
-    num: '01',
-    title: 'Задача на калькулятор',
-    tags: ['B2C', 'TravelTech', 'Web', 'Mobile'],
-    tagHighlight: 'B2C',
-    role: 'Product Designer + PO',
-    company: 'KUKOYAKA.PRO',
-    platform: 'Desktop + Mobile',
-    href: 'b2c.html',
+    num: '04',
+    title: 'Альфа-банк. Подошла как продакт — доказала, что банкомат лишний',
+    tags: ['B2C', 'FinTech', 'Discovery', 'Mobile'],
+    tagHighlight: 'FinTech',
+    role: 'Product Designer · Solo Research',
+    company: 'Альфа-банк (хакатон)',
+    platform: 'iOS / Android',
+    href: 'mobile.html',
     figma: '#',
-    pattern: 'pat-grid',
+    pattern: 'pat-lines',
+    images: [
+      'media/mobile/case-mobile-1.jpg',
+      'media/mobile/case-mobile-2.jpg',
+      'media/mobile/case-mobile-3.jpg',
+      'media/mobile/case-mobile-4.jpg',
+      'media/mobile/case-mobile-5.jpg',
+      'media/mobile/case-mobile-6.jpg',
+      'media/mobile/case-mobile-7.jpg',
+      'media/mobile/case-mobile-8.jpg',
+      'media/mobile/case-mobile-9.jpg',
+      'media/mobile/case-mobile-10.jpg',
+      'media/mobile/case-mobile-11.jpg'
+    ],
     stats: [
-      { n: '··+', l: 'экранов' },
-      { n: '··',  l: 'фичей' },
-      { n: '··',  l: 'гипотез' }
+      { n: '5', l: 'дней соло-Discovery' },
+      { n: '8', l: 'конкурентов изучено' },
+      { n: '6', l: 'дизайн-решений' }
     ],
-    tldr: 'Маркетинг просил обновить калькулятор. Аудит показал: настоящая проблема — потеря холодного трафика. Переосмыслила User Flow, создала дизайн-систему с нуля, провела редизайн Desktop + Mobile.',
-    roleChips: ['Product Designer', 'Product Owner'],
+    tldr: 'За 5 дней — solo полный цикл: анализ банка, 8 конкурентов, статистика ЦБ, зарубежный опыт, интервью, персона, 2 опроса, backlog. Гипотеза подтвердилась: приложение перекрывает все функции банкомата. Итог — 6 дизайн-решений с финансовой игрой в центре.',
+    roleChips: ['Product Designer', 'Solo Research'],
     roleList: [
-      'Анализ метрик (Яндекс.Метрика): воронки, Вебвизор, карты кликов',
-      'Исследование: JTBD + CJM + персоны + конкурентный анализ',
-      'User Flow + Information Architecture + гипотезы',
-      'Desktop wireframes → UI → Design System с нуля',
-      'Юзабилити-тестирование + итерации'
+      'Полный цикл от нуля за 5 дней — самостоятельно, без посторонней помощи',
+      'Масштабное исследование: анализ банка, конкурентов, ЦБ, зарубежный опыт, поведение россиян в кризис',
+      'Провела интервью, составила персону «Ирина» и Job Stories',
+      'Два опроса, Backlog с приоритизацией, Mind Map, IA & User Flow',
+      'Разработала 6 дизайн-решений, создала скетчи и макеты',
+      'Оформила все наработки в презентацию, соблюла все 4 дедлайна'
     ],
-    processSteps: ['Аудит', 'Стратегия', 'Research', 'UX+UI', 'DS'],
-    processActive: 4,
-    decisions: [
-      { tag: 't-arc', tagLabel: 'Архитектура', title: 'Разделение тура и оформления',   text: 'Снизило когнитивную нагрузку — конверсия выросла' },
-      { tag: 't-ux',  tagLabel: 'UX',          title: 'Sticky-калькулятор',              text: 'Доступен в любой точке страницы тура' },
-      { tag: 't-biz', tagLabel: 'Доверие',     title: 'Редизайн айдентики',              text: 'Без доверия холодный трафик не конвертируется' },
-      { tag: 't-sys', tagLabel: 'Система',     title: 'Design System с нуля',            text: 'Ускорила последующие итерации разработки' }
-    ]
-  },
-  {
-    num: '02',
-    title: 'Отменила Excel',
-    tags: ['B2E', 'ERP', 'Цифровизация'],
-    tagHighlight: 'B2E',
-    role: 'Product Designer',
-    company: 'Турпродукт',
-    platform: 'Web-приложение',
-    href: 'b2e.html',
-    figma: '#',
-    pattern: 'pat-dots',
-    stats: [
-      { n: '−85%', l: 'время расчёта' },
-      { n: 'ERP',  l: 'модуль' },
-      { n: '1',    l: 'ключевой слот' }
-    ],
-    tldr: 'Перевела сложный Excel-расчёт стоимости туров в прозрачную автоматизированную систему. Работала на стыке бизнес-аналитики и UX — полностью формализовала логику ценообразования.',
-    roleChips: ['Product Designer'],
-    roleList: [
-      'Погружение: встреча с руководителем + изучение Excel-файла расчётов',
-      'Формализация логики ценообразования и всех переменных',
-      'Проектирование модуля: от структуры до UI',
-      'Автоматическое распределение затрат по размерам групп',
-      'Расчёт точки рентабельности и рекомендованной стоимости'
-    ],
-    processSteps: ['Погружение', 'Анализ', 'Проектирование', 'UI'],
+    processSteps: ['Погружение и анализ', 'Пользователь и синтез', 'Проектирование'],
     processActive: 3,
     decisions: [
-      { tag: 't-arc', tagLabel: 'Архитектура', title: 'Система сама собирает данные',    text: 'Без ручного ввода — из заполненного турпродукта' },
-      { tag: 't-ux',  tagLabel: 'UX',          title: 'Прозрачная финансовая модель',    text: 'Видно каждую статью затрат — не ручной трюк' },
-      { tag: 't-biz', tagLabel: 'Результат',   title: '−85% времени на расчёт тура',    text: 'Один расчёт: было ~час, стало ~9 минут' },
-      { tag: 't-sys', tagLabel: 'Автоматизация', title: 'Маржинальность задаётся один раз', text: 'Стоимость пересчитывается автоматически' }
+      { tag: 't-ux',  tagLabel: 'Геймификация', title: 'Финансовая игра внутри банка',        text: 'Сторителлинг раскрывает продукты банка и убирает барьер «первого касания»' },
+      { tag: 't-biz', tagLabel: 'Стратегия',    title: 'Накопительный счёт vs цифровой рубль', text: 'ЦБ не позволяет создавать вклады в ЦР — это конкурентное преимущество банка' },
+      { tag: 't-arc', tagLabel: 'Тёмная тема',  title: 'Игровой режим визуально отделён',     text: 'Пользователь понимает: вышел из основного интерфейса банка' },
+      { tag: 't-sys', tagLabel: 'Positive framing', title: 'Акцент на доходе от продуктов',   text: 'Мотивирует хранить средства в Альфа-банке, а не выводить в цифровой рубль' }
     ]
   },
   {
     num: '03',
-    title: 'ЛК агента с нуля',
+    title: 'ЛК агента: −45,3% времени на заявку и восхищенные отзывы',
     tags: ['B2B2C', 'CRM', 'Web-приложение'],
     tagHighlight: 'B2B2C',
     role: 'Product Designer',
@@ -86,6 +66,13 @@ const CASES = [
     href: 'agent-lk.html',
     figma: '#',
     pattern: 'pat-diag',
+    images: [
+      'media/b2b/case-b2b-1.jpg',
+      'media/b2b/case-b2b-2.jpg',
+      'media/b2b/case-b2b-3.jpg',
+      'media/b2b/case-b2b-4.jpg',
+      'media/b2b/case-b2b-5.jpg'
+    ],
     stats: [
       { n: '40+', l: 'фичей' },
       { n: '26+', l: 'гипотез' },
@@ -110,37 +97,98 @@ const CASES = [
     ]
   },
   {
-    num: '04',
-    title: 'Альфа-банк. Подошла как продакт — доказала, что банкомат лишний',
-    tags: ['B2C', 'FinTech', 'Mobile', 'Discovery'],
-    tagHighlight: 'FinTech',
+    num: '02',
+    title: 'Отменила Excel за 11 дней',
+    tags: ['B2E', 'ERP', 'Цифровизация'],
+    tagHighlight: 'B2E',
     role: 'Product Designer',
-    company: 'Альфа-банк (хакатон)',
-    platform: 'iOS / Android',
-    href: 'mobile.html',
+    company: 'Турпродукт',
+    platform: 'Web-приложение',
+    href: 'b2e.html',
     figma: '#',
-    pattern: 'pat-lines',
-    stats: [
-      { n: '5', l: 'дней' },
-      { n: '2', l: 'опроса' },
-      { n: '1', l: 'интервью' }
+    pattern: 'pat-dots',
+    images: [
+      'media/b2e/case-b2e-1.jpg',
+      'media/b2e/case-b2e-2.jpg',
+      'media/b2e/case-b2e-3.jpg',
+      'media/b2e/case-b2e-4.jpg',
+      'media/b2e/case-b2e-5.jpg',
+      'media/b2e/case-b2e-6.jpg'
     ],
-    tldr: 'Хакатон без доступа к организаторам. Провела глубокое самостоятельное исследование: цифровой рубль, поведение пользователей, конкуренты. Решение — финансовая игра внутри приложения банка.',
+    stats: [
+      { n: '−85%', l: 'время расчёта' },
+      { n: 'ERP',  l: 'модуль' },
+      { n: '1',    l: 'ключевой слот' }
+    ],
+    tldr: 'Перевела сложный Excel-расчёт стоимости туров в прозрачную автоматизированную систему. Работала на стыке бизнес-аналитики и UX — полностью формализовала логику ценообразования.',
     roleChips: ['Product Designer'],
     roleList: [
-      'Mind map «Влияние государства и поведения на бизнес»',
-      'Интервью + два опроса (функционал и визуальное решение)',
-      'Конкурентный анализ + анализ цифрового рубля',
-      'Backlog + приоритизация + прототип за 5 дней',
-      'Соблюдение 4 дедлайнов + презентация'
+      'Погружение: встреча с руководителем + изучение Excel-файла расчётов',
+      'Формализация логики ценообразования и всех переменных',
+      'Проектирование модуля: от структуры до UI',
+      'Автоматическое распределение затрат по размерам групп',
+      'Расчёт точки рентабельности и рекомендованной стоимости'
     ],
-    processSteps: ['Research', 'JTBD', 'Backlog', 'Прототип', 'Pitch'],
-    processActive: 4,
+    processSteps: ['Погружение', 'Анализ', 'Проектирование', 'UI'],
+    processActive: 3,
     decisions: [
-      { tag: 't-ux',  tagLabel: 'Геймификация', title: 'Игра внутри банка',              text: 'Сторителлинг раскрывает продукты без барьера первого касания' },
-      { tag: 't-biz', tagLabel: 'Стратегия',    title: 'Накопительный счёт vs цифрорубль', text: 'Конкурентное преимущество перед государственной цифровизацией' },
-      { tag: 't-arc', tagLabel: 'Тёмная тема',  title: 'Игровой режим отдельн визуально', text: 'Пользователь понимает: вышел из основного интерфейса' },
-      { tag: 't-sys', tagLabel: 'UX',           title: 'Максимально упрощённый UI игры',  text: 'Барьер выхода снижен — пользователь доходит до конца' }
+      { tag: 't-arc', tagLabel: 'Архитектура', title: 'Система сама собирает данные',    text: 'Без ручного ввода — из заполненного турпродукта' },
+      { tag: 't-ux',  tagLabel: 'UX',          title: 'Прозрачная финансовая модель',    text: 'Видно каждую статью затрат — не ручной трюк' },
+      { tag: 't-biz', tagLabel: 'Результат',   title: '−85% времени на расчёт тура',    text: 'Один расчёт: было ~час, стало ~9 минут' },
+      { tag: 't-sys', tagLabel: 'Автоматизация', title: 'Маржинальность задаётся один раз', text: 'Стоимость пересчитывается автоматически' }
+    ]
+  },
+  {
+    num: '01',
+    title: 'Пришла обновить калькулятор — переосмыслила весь путь к покупке',
+    tags: ['B2C', 'TravelTech', 'Design System', 'App'],
+    tagHighlight: 'B2C',
+    role: 'Product Designer + PO',
+    company: 'СканТур',
+    platform: '',
+    href: 'b2c.html',
+    figma: '#',
+    pattern: 'pat-grid',
+    images: [
+      'media/b2c/case-2bc-1.jpg',
+      'media/b2c/case-2bc-2.jpg',
+      'media/b2c/case-2bc-3.jpg',
+      'media/b2c/case-2bc-5.jpg',
+      'media/b2c/case-2bc-6.jpg',
+      'media/b2c/case-2bc-7.jpg',
+      'media/b2c/case-2bc-8.jpg',
+      'media/b2c/case-2bc-9.jpg',
+      'media/b2c/case-2bc-10.jpg',
+      'media/b2c/case-2bc-11.jpg',
+      'media/b2c/case-2bc-12.jpg',
+      'media/b2c/case-2bc-13.jpg',
+      'media/b2c/case-2bc-14.jpg',
+      'media/b2c/case-2bc-15.jpg'
+    ],
+    stats: [
+      { n: '17', l: 'барьеров найдено' },
+      { n: '12', l: 'фичей' },
+      { n: '24', l: 'гипотез проверено' }
+    ],
+    tldr: 'Маркетинг попросил точечно обновить один элемент. Я провела аудит, нашла 17 барьеров в конверсионном пути и убедила заказчика расширить скоуп. Год экспериментов с фрилансерами — конверсия только падала. За один итерационный цикл: новый User Flow, исследование аудитории, два раунда тестирования на реальных пользователях, дизайн-система с нуля.',
+    roleChips: ['Product Designer', 'Product Owner'],
+    roleList: [
+      'Провела аудит сайта — нашла 17 барьеров, презентовала инсайты заказчику с пруфами',
+      'Анализ метрик в Яндекс.Метрике: воронки, вебвизор, карты кликов и скроллов',
+      'Конкурентный анализ 8 компаний + углублённый разбор лидера рынка «Большая страна»',
+      'Исследование аудитории: JTBD + CJM + персоны, согласовано с отделом маркетинга',
+      'Два раунда юзабилити-тестирования (desktop + mobile), 7 респондентов через Pthwy',
+      'Переработала IA и User Flow',
+      'Сформировала дизайн-систему с нуля',
+      'Инициировала шаблон Product Vision и систему отслеживания метрик'
+    ],
+    processSteps: ['Диагностика', 'Стратегия', 'Проектирование'],
+    processActive: 2,
+    decisions: [
+      { tag: 't-arc', tagLabel: 'Архитектура', title: 'Разделение тура и оформления',   text: 'Снизило когнитивную нагрузку — конверсия выросла' },
+      { tag: 't-ux',  tagLabel: 'UX',          title: 'Sticky-калькулятор',              text: 'Доступен в любой точке страницы тура' },
+      { tag: 't-biz', tagLabel: 'Доверие',     title: 'Редизайн айдентики',              text: 'Без доверия холодный трафик не конвертируется' },
+      { tag: 't-sys', tagLabel: 'Система',     title: 'Design System с нуля',            text: 'Ускорила последующие итерации разработки' }
     ]
   },
   {
@@ -149,11 +197,25 @@ const CASES = [
     tags: ['Mobile', 'Game', 'Social', '0→1'],
     tagHighlight: 'Mobile',
     role: 'Lead Product Designer',
-    company: 'AURA Game',
+    company: 'AURA',
     platform: 'iOS / Android',
     href: 'aura.html',
     figma: '#',
     pattern: 'pat-cross',
+    images: [
+      'media/aura/case-aura-1.jpg',
+      'media/aura/case-aura-2.jpg',
+      'media/aura/case-aura-3.jpg',
+      'media/aura/case-aura-4.jpg',
+      'media/aura/case-aura-5.jpg',
+      'media/aura/case-aura-6.jpg',
+      'media/aura/case-aura-7.jpg',
+      'media/aura/case-aura-8.jpg',
+      'media/aura/case-aura-9.jpg',
+      'media/aura/case-aura-10.jpg',
+      'media/aura/case-aura-11.jpg',
+      'media/aura/case-aura-12.jpg'
+    ],
     stats: [
       { n: '180ч', l: 'на MVP' },
       { n: '10',   l: 'разделов' },
@@ -182,6 +244,7 @@ const CASES = [
 
 // ─── State ──────────────────────────────────────────
 let currentCase = 0;
+let currentImage = 0;
 
 // ─── DOM refs (resolved after DOMContentLoaded) ─────
 let modal, overlay;
@@ -190,13 +253,17 @@ function renderModal(idx) {
   const c = CASES[idx];
   currentCase = idx;
 
-  // Cover pattern
+  // Cover pattern + image
+  currentImage = 0;
   document.getElementById('modalCoverBg').className = 'modal-cover-inner ' + c.pattern;
-
-  // Screen placeholder
-  document.getElementById('modalScreenPh').innerHTML =
-    'Ключевой экран<br>кейса ' + c.num +
-    '<br><span style="color:rgba(255,255,255,.08)">Figma → PNG/WebP</span>';
+  const img = document.getElementById('modalCoverImg');
+  if (c.images && c.images.length) {
+    img.src = c.images[0];
+    img.style.display = 'block';
+  } else {
+    img.src = '';
+    img.style.display = 'none';
+  }
 
   // Stats (up to 3)
   c.stats.forEach((s, i) => {
@@ -217,7 +284,7 @@ function renderModal(idx) {
     { label: 'Роль',     val: c.role },
     { label: 'Компания', val: c.company },
     { label: 'Платформа', val: c.platform }
-  ].map(m => `<span class="mmi"><strong>${m.val}</strong>&ensp;${m.label}</span>`).join('');
+  ].filter(m => m.val).map(m => `<span class="mmi"><strong>${m.val}</strong>&ensp;${m.label}</span>`).join('');
 
   // Process steps HTML
   const stepsHtml = c.processSteps.map((s, i) => {
@@ -231,7 +298,6 @@ function renderModal(idx) {
   // Body
   document.getElementById('modalBody').innerHTML = `
     <div class="m-tldr">
-      <span class="m-tldr-lbl">TL;DR</span>
       <span class="m-tldr-text">${c.tldr}</span>
     </div>
 
@@ -311,6 +377,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Close
   document.getElementById('modalClose').addEventListener('click', closeModal);
+  document.getElementById('modalCloseFooter').addEventListener('click', closeModal);
   overlay.addEventListener('click', closeModal);
 
   // Footer navigation
@@ -324,9 +391,17 @@ document.addEventListener('DOMContentLoaded', function () {
   // Keyboard
   document.addEventListener('keydown', e => {
     if (!modal.classList.contains('open')) return;
-    if (e.key === 'Escape')      closeModal();
-    if (e.key === 'ArrowRight' && currentCase < CASES.length - 1) renderModal(currentCase + 1);
-    if (e.key === 'ArrowLeft'  && currentCase > 0)                 renderModal(currentCase - 1);
+    if (e.key === 'Escape') { closeModal(); return; }
+    const c = CASES[currentCase];
+    const imgs = c.images || [];
+    if (e.key === 'ArrowRight' && imgs.length) {
+      currentImage = Math.min(currentImage + 1, imgs.length - 1);
+      document.getElementById('modalCoverImg').src = imgs[currentImage];
+    }
+    if (e.key === 'ArrowLeft' && imgs.length) {
+      currentImage = Math.max(currentImage - 1, 0);
+      document.getElementById('modalCoverImg').src = imgs[currentImage];
+    }
   });
 
   // Sticky header shadow on scroll
