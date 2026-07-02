@@ -42,13 +42,14 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Колесо мыши
-  preview.addEventListener('wheel', function (e) {
-    interacting = true;
-    clearTimeout(resumeTimer);
-    var delta = e.deltaX !== 0 ? e.deltaX : e.deltaY;
-    x = wrap(x + delta * 0.5);
-    resumeTimer = setTimeout(function () { interacting = false; }, 600);
-  }, { passive: true });
+ preview.addEventListener('wheel', function (e) {
+  e.preventDefault();
+  interacting = true;
+  clearTimeout(resumeTimer);
+  var delta = e.deltaX !== 0 ? e.deltaX : e.deltaY;
+  x = wrap(x + delta * 0.5);
+  resumeTimer = setTimeout(function () { interacting = false; }, 600);
+}, { passive: false });
 
   // Тач
   preview.addEventListener('touchstart', function (e) {
