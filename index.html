@@ -572,6 +572,7 @@ function applyFiltersFromURL(){
 }
 
 document.addEventListener('DOMContentLoaded',function(){
+  applyFiltersFromURL();
   // Scroll reveal
   document.querySelectorAll('.rv').forEach(el=>el.classList.add('pre'));
   const io=new IntersectionObserver(e=>{
