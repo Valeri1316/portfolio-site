@@ -93,6 +93,37 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /* ── Filter bar (index.html) ────────────────────── */
+  function computeAndApply(activeTags){
+    const all = activeTags.includes('all') || activeTags.length===0;
+    let n=0;
+    document.querySelectorAll('.cc').forEach(c=>{
+      if(c.classList.contains('cc-quote')){c.classList.toggle('h',!all);return;}
+      const t=c.dataset.t||'';
+      const words=t.split(' ');
+      const show=all||activeTags.every(tag=>words.includes(tag));
+      c.classList.toggle('h',!show);
+      if(show)n++;
+    });
+    const empty = document.getElementById('empty');
+    if (empty) empty.style.display = n ? 'none' : 'block';
+  }
+
+  function setActiveButtons(tags){
+    document.querySelectorAll('.ftag').forEach(b=>{
+      b.classList.toggle('on', tags.includes(b.dataset.tag));
+    });
+  }
+
+  function updateURL(tags){
+    const url = new URL(window.location);
+    if(tags.length===0 || (tags.length===1 && tags[0]==='all')){
+      url.searchParams.delete('filter');
+    } else {
+      url.searchParams.set('filter', tags.join(','));
+    }
+    history.replaceState(null, '', url);
+  }
+
   window.f = function (tag, el) {
     if (tag === 'all') {
       document.querySelectorAll('.ftag').forEach(b => b.classList.remove('on'));
@@ -104,19 +135,21 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.ftag[data-tag="all"]').classList.add('on');
     }
     const activeTags = [...document.querySelectorAll('.ftag.on')].map(b => b.dataset.tag);
-    const all = activeTags.includes('all');
-    let n = 0;
-    document.querySelectorAll('.cc').forEach(c => {
-      if (c.classList.contains('cc-quote')) { c.classList.toggle('h', !all); return; }
-      const t = c.dataset.t || '';
-      const words = t.split(' ');
-      const show = all || activeTags.every(tag => words.includes(tag));
-      c.classList.toggle('h', !show);
-      if (show) n++;
-    });
-    const empty = document.getElementById('empty');
-    if (empty) empty.style.display = n ? 'none' : 'block';
+    computeAndApply(activeTags);
+    updateURL(activeTags);
   };
+
+  function applyFiltersFromURL(){
+    const params = new URLSearchParams(window.location.search);
+    const filterParam = params.get('filter');
+    if(!filterParam) return;
+    const tags = filterParam.split(',').map(t=>t.trim()).filter(Boolean);
+    const validTags = tags.filter(t=>document.querySelector('.ftag[data-tag="'+t+'"]'));
+    if(validTags.length===0) return;
+    setActiveButtons(validTags);
+    computeAndApply(validTags);
+  }
+  applyFiltersFromURL();
 
   /* ── Quick Preview panel (index.html) ──────────── */
   const panel = document.getElementById('qp');
